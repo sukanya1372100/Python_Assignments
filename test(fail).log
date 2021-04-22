@@ -1,0 +1,1600 @@
+2021-02-15 10:41:46,296 INFO:cimcLib:quick_provision()[line 7985] BEGIN: chassis_number = 1, blade_number = 1, clean = True, flexflash_state = disable, raid_report = disable, protect = no, mode = any-configuration, mac_range = 10, vlan_id = 4, vlan_native = no, uuid = None, set_inband_policy = False, random_gen (bios policy) = False, enable_sol = True
+2021-02-15 10:41:46,296 INFO:cimcLib:disassociate()[line 8410] BEGIN: chassis_number = 1, blade_number = 1
+2021-02-15 10:41:46,296 INFO:cimcLib:disassociate()[line 8416] Identify existing Service Profile
+2021-02-15 10:41:46,299 INFO:util:SPY: top
+2021-02-15 10:41:46,306 INFO:util:SPY: 
+2021-02-15 10:41:46,306 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:41:46,313 INFO:util:SPY: scope server 1/1
+2021-02-15 10:41:46,314 INFO:util:SPY: 
+2021-02-15 10:41:46,314 INFO:util:SPY: ucs-reg-tb09-A /chassis/server # 
+2021-02-15 10:41:46,317 INFO:util:SPY: show assoc
+2021-02-15 10:41:46,348 INFO:util:SPY: 
+2021-02-15 10:41:46,348 INFO:util:SPY: Association  Service Profile
+2021-02-15 10:41:46,349 INFO:util:SPY: ------------ ---------------
+2021-02-15 10:41:46,349 INFO:util:SPY: Associated   SP_1_1
+2021-02-15 10:41:46,349 INFO:util:SPY: ucs-reg-tb09-A /chassis/server # 
+2021-02-15 10:41:46,350 INFO:cimcLib:disassociate()[line 8430]Identify Org (if not root)
+2021-02-15 10:41:46,357 INFO:util:SPY: show detail | grep "Service Profile"
+2021-02-15 10:41:46,484 INFO:util:SPY: 
+2021-02-15 10:41:46,484 INFO:util:SPY:     Service Profile: SP_1_1
+2021-02-15 10:41:46,485 INFO:util:SPY: ucs-reg-tb09-A /chassis/server # 
+2021-02-15 10:41:46,485 INFO:cimcLib:disassociate()[line 8444] Disassociate existing Service Profile
+2021-02-15 10:41:46,488 INFO:util:SPY: top
+2021-02-15 10:41:46,495 INFO:util:SPY: 
+2021-02-15 10:41:46,495 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:41:46,498 INFO:util:SPY: scope org 
+2021-02-15 10:41:46,505 INFO:util:SPY: 
+2021-02-15 10:41:46,505 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:41:46,508 INFO:util:SPY: scope service-profile SP_1_1
+2021-02-15 10:41:46,511 INFO:util:SPY: 
+2021-02-15 10:41:46,511 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile # 
+2021-02-15 10:41:46,515 INFO:util:SPY: disassociate
+2021-02-15 10:41:46,518 INFO:util:SPY: 
+2021-02-15 10:41:46,518 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile* # 
+2021-02-15 10:41:46,522 INFO:util:SPY: commit-buffer
+2021-02-15 10:41:46,749 INFO:util:SPY: 
+2021-02-15 10:41:46,752 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile # 
+2021-02-15 10:42:46,790 INFO:cimcLib:disassociate()[line 8462] END
+2021-02-15 10:42:46,793 INFO:cimcLib:unprovision()[line 8217] BEGIN
+2021-02-15 10:42:46,793 INFO:cimcLib:disassociate()[line 8410] BEGIN: chassis_number = 1, blade_number = 1
+2021-02-15 10:42:46,794 INFO:cimcLib:disassociate()[line 8416] Identify existing Service Profile
+2021-02-15 10:42:46,807 INFO:util:SPY: top
+2021-02-15 10:42:46,808 INFO:util:SPY: 
+2021-02-15 10:42:46,808 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:42:46,816 INFO:util:SPY: scope server 1/1
+2021-02-15 10:42:46,816 INFO:util:SPY: 
+2021-02-15 10:42:46,817 INFO:util:SPY: ucs-reg-tb09-A /chassis/server # 
+2021-02-15 10:42:46,820 INFO:util:SPY: show assoc
+2021-02-15 10:42:46,827 INFO:util:SPY: 
+2021-02-15 10:42:46,827 INFO:util:SPY: Association  Service Profile
+2021-02-15 10:42:46,828 INFO:util:SPY: ------------ ---------------
+2021-02-15 10:42:46,828 INFO:util:SPY: Removing
+2021-02-15 10:42:46,828 INFO:util:SPY: ucs-reg-tb09-A /chassis/server # 
+2021-02-15 10:42:46,830 INFO:cimcLib:disassociate()[line 8462] END
+2021-02-15 10:42:46,830 INFO:cimcLib:delete_service_profile()[line 10935] BEGIN: service_profile = QALI_SP_1_1
+2021-02-15 10:42:46,830 INFO:cimcLib:delete_service_profile()[line 10943] Check that the Service Profile exists
+2021-02-15 10:42:46,833 INFO:util:SPY: top
+2021-02-15 10:42:46,836 INFO:util:SPY: 
+2021-02-15 10:42:46,837 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:42:46,840 INFO:util:SPY: scope org
+2021-02-15 10:42:46,841 INFO:util:SPY: 
+2021-02-15 10:42:46,842 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:46,845 INFO:util:SPY: show service-profile QALI_SP_1_1
+2021-02-15 10:42:46,848 INFO:util:SPY: 
+2021-02-15 10:42:46,848 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:46,849 INFO:cimcLib:delete_service_profile()[line 10960] Service Profile does not exist
+2021-02-15 10:42:46,849 INFO:cimcLib:delete_service_profile()[line 10965] Verify that Service Profile was deleted
+2021-02-15 10:42:46,853 INFO:util:SPY: top
+2021-02-15 10:42:46,856 INFO:util:SPY: 
+2021-02-15 10:42:46,856 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:42:46,859 INFO:util:SPY: scope org
+2021-02-15 10:42:46,861 INFO:util:SPY: 
+2021-02-15 10:42:46,861 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:46,864 INFO:util:SPY: show service-profile QALI_SP_1_1
+2021-02-15 10:42:46,867 INFO:util:SPY: 
+2021-02-15 10:42:46,867 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:46,868 INFO:cimcLib:delete_service_profile()[line 10983] END [True]
+2021-02-15 10:42:46,868 INFO:cimcLib:delete_service_profile()[line 10935] BEGIN: service_profile = QALI_SP_T_1_1
+2021-02-15 10:42:46,868 INFO:cimcLib:delete_service_profile()[line 10943] Check that the Service Profile exists
+2021-02-15 10:42:46,872 INFO:util:SPY: top
+2021-02-15 10:42:46,874 INFO:util:SPY: 
+2021-02-15 10:42:46,875 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:42:46,878 INFO:util:SPY: scope org
+2021-02-15 10:42:46,880 INFO:util:SPY: 
+2021-02-15 10:42:46,880 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:46,884 INFO:util:SPY: show service-profile QALI_SP_T_1_1
+2021-02-15 10:42:46,887 INFO:util:SPY: 
+2021-02-15 10:42:46,887 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:46,888 INFO:cimcLib:delete_service_profile()[line 10960] Service Profile does not exist
+2021-02-15 10:42:46,888 INFO:cimcLib:delete_service_profile()[line 10965] Verify that Service Profile was deleted
+2021-02-15 10:42:46,891 INFO:util:SPY: top
+2021-02-15 10:42:46,893 INFO:util:SPY: 
+2021-02-15 10:42:46,894 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:42:46,896 INFO:util:SPY: scope org
+2021-02-15 10:42:46,898 INFO:util:SPY: 
+2021-02-15 10:42:46,898 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:46,902 INFO:util:SPY: show service-profile QALI_SP_T_1_1
+2021-02-15 10:42:46,905 INFO:util:SPY: 
+2021-02-15 10:42:46,905 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:46,905 INFO:cimcLib:delete_service_profile()[line 10983] END [True]
+2021-02-15 10:42:46,906 INFO:cimcLib:delete_local_disk_policy()[line 10615] BEGIN: local_disk_policy = QALI_LDP_1_1
+2021-02-15 10:42:46,906 INFO:cimcLib:delete_local_disk_policy()[line 10623] Check that the local disk policy exists
+2021-02-15 10:42:46,909 INFO:util:SPY: top
+2021-02-15 10:42:46,912 INFO:util:SPY: 
+2021-02-15 10:42:46,913 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:42:46,916 INFO:util:SPY: scope org
+2021-02-15 10:42:46,917 INFO:util:SPY: 
+2021-02-15 10:42:46,917 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:46,921 INFO:util:SPY: show local-disk-config-policy QALI_LDP_1_1
+2021-02-15 10:42:46,924 INFO:util:SPY: 
+2021-02-15 10:42:46,924 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:46,925 INFO:cimcLib:delete_local_disk_policy()[line 10640] Local disk policy does not exist
+2021-02-15 10:42:46,926 INFO:cimcLib:delete_local_disk_policy()[line 10645] Verify that the local disk policy is no longer present
+2021-02-15 10:42:46,929 INFO:util:SPY: show local-disk-config-policy QALI_LDP_1_1
+2021-02-15 10:42:46,932 INFO:util:SPY: 
+2021-02-15 10:42:46,932 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:46,933 INFO:cimcLib:delete_local_disk_policy()[line 10662] END [True]
+2021-02-15 10:42:46,933 INFO:cimcLib:delete_boot_policy()[line 10676] BEGIN: boot_policy = QALI_BP_1_1
+2021-02-15 10:42:46,933 INFO:cimcLib:delete_boot_policy()[line 10684] Check that the boot policy exists
+2021-02-15 10:42:46,936 INFO:util:SPY: top
+2021-02-15 10:42:46,939 INFO:util:SPY: 
+2021-02-15 10:42:46,940 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:42:46,943 INFO:util:SPY: scope org
+2021-02-15 10:42:46,946 INFO:util:SPY: 
+2021-02-15 10:42:46,946 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:46,950 INFO:util:SPY: show boot-policy QALI_BP_1_1
+2021-02-15 10:42:46,953 INFO:util:SPY: 
+2021-02-15 10:42:46,953 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:46,954 INFO:cimcLib:delete_boot_policy()[line 10696] Boot policy does not exist
+2021-02-15 10:42:46,954 INFO:cimcLib:delete_boot_policy()[line 10700] Verify that the boot policy is no longer present
+2021-02-15 10:42:46,957 INFO:util:SPY: show boot-policy QALI_BP_1_1
+2021-02-15 10:42:46,960 INFO:util:SPY: 
+2021-02-15 10:42:46,961 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:46,961 INFO:cimcLib:delete_boot_policy()[line 10715] END [True]
+2021-02-15 10:42:46,961 INFO:cimcLib:delete_bios_policy()[line 10729] BEGIN: bios_policy = QALI_BIOSSP_1_1
+2021-02-15 10:42:46,962 INFO:cimcLib:delete_bios_policy()[line 10737] Check that the bios policy exists
+2021-02-15 10:42:46,965 INFO:util:SPY: top
+2021-02-15 10:42:46,968 INFO:util:SPY: 
+2021-02-15 10:42:46,968 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:42:46,971 INFO:util:SPY: scope org
+2021-02-15 10:42:46,973 INFO:util:SPY: 
+2021-02-15 10:42:46,973 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:46,976 INFO:util:SPY: show bios-policy QALI_BIOSSP_1_1
+2021-02-15 10:42:46,979 INFO:util:SPY: 
+2021-02-15 10:42:46,980 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:46,980 INFO:cimcLib:delete_bios_policy()[line 10749] Bios policy does not exist
+2021-02-15 10:42:46,981 INFO:cimcLib:delete_bios_policy()[line 10753] Verify that the bios policy is no longer present
+2021-02-15 10:42:46,984 INFO:util:SPY: show bios-policy QALI_BIOSSP_1_1
+2021-02-15 10:42:46,987 INFO:util:SPY: 
+2021-02-15 10:42:46,987 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:46,988 INFO:cimcLib:delete_bios_policy()[line 10768] END [True]
+2021-02-15 10:42:46,988 INFO:cimcLib:delete_sol_policy()[line 10780] BEGIN
+2021-02-15 10:42:46,988 INFO:cimcLib:delete_sol_policy()[line 10786] Check that the SOL policy exists
+2021-02-15 10:42:46,991 INFO:util:SPY: top
+2021-02-15 10:42:46,994 INFO:util:SPY: 
+2021-02-15 10:42:46,995 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:42:46,998 INFO:util:SPY: scope org
+2021-02-15 10:42:46,999 INFO:util:SPY: 
+2021-02-15 10:42:46,999 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:47,003 INFO:util:SPY: show sol-policy QALI_SOL
+2021-02-15 10:42:47,006 INFO:util:SPY: 
+2021-02-15 10:42:47,006 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:47,007 INFO:cimcLib:delete_sol_policy()[line 10799] SOL policy does not exist
+2021-02-15 10:42:47,007 INFO:cimcLib:delete_sol_policy()[line 10803] Verify that the SOL policy is no longer present
+2021-02-15 10:42:47,010 INFO:util:SPY: show sol-policy QALI_SOL
+2021-02-15 10:42:47,013 INFO:util:SPY: 
+2021-02-15 10:42:47,013 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:47,014 INFO:cimcLib:delete_sol_policy()[line 10818] END [True]
+2021-02-15 10:42:47,014 INFO:cimcLib:delete_vnic_template()[line 10880] BEGIN: vnic_template = QALI_VNIC_T_1_1
+2021-02-15 10:42:47,014 INFO:cimcLib:delete_vnic_template()[line 10888] Check that the VNIC Template exists
+2021-02-15 10:42:47,017 INFO:util:SPY: top
+2021-02-15 10:42:47,020 INFO:util:SPY: 
+2021-02-15 10:42:47,021 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:42:47,024 INFO:util:SPY: scope org
+2021-02-15 10:42:47,025 INFO:util:SPY: 
+2021-02-15 10:42:47,025 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:47,029 INFO:util:SPY: show vnic-templ QALI_VNIC_T_1_1
+2021-02-15 10:42:47,031 INFO:util:SPY: 
+2021-02-15 10:42:47,032 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:47,033 INFO:cimcLib:delete_vnic_template()[line 10900] VNIC Template does not exist
+2021-02-15 10:42:47,033 INFO:cimcLib:delete_vnic_template()[line 10904] Verify that VNIC Template was deleted
+2021-02-15 10:42:47,036 INFO:util:SPY: top
+2021-02-15 10:42:47,039 INFO:util:SPY: 
+2021-02-15 10:42:47,039 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:42:47,043 INFO:util:SPY: scope org
+2021-02-15 10:42:47,044 INFO:util:SPY: 
+2021-02-15 10:42:47,044 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:47,047 INFO:util:SPY: show vnic-templ QALI_VNIC_T_1_1
+2021-02-15 10:42:47,050 INFO:util:SPY: 
+2021-02-15 10:42:47,050 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:42:47,050 INFO:cimcLib:delete_vnic_template()[line 10921] END [True]
+2021-02-15 10:42:47,051 INFO:cimcLib:unset_vlan_from_vlan_group()[line 10550] BEGIN: vlan_group = QALI_VLAN_GROUP vlan_name = QALI_VLAN_1_1
+2021-02-15 10:42:47,051 INFO:cimcLib:Verify that VLAN exists
+2021-02-15 10:42:47,053 INFO:util:SPY: top
+2021-02-15 10:42:47,056 INFO:util:SPY: 
+2021-02-15 10:42:47,056 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:42:47,059 INFO:util:SPY: scope eth-uplink
+2021-02-15 10:42:47,060 INFO:util:SPY: 
+2021-02-15 10:42:47,060 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink # 
+2021-02-15 10:42:47,063 INFO:util:SPY: show vlan QALI_VLAN_1_1
+2021-02-15 10:42:47,066 INFO:util:SPY: 
+2021-02-15 10:42:47,066 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink # 
+2021-02-15 10:42:47,066 ERROR:cimcLib:VLAN QALI_VLAN_1_1 does not exist
+2021-02-15 10:42:47,067 INFO:cimcLib:delete_vlan()[line 10995] BEGIN: vlan_name = QALI_VLAN_1_1
+2021-02-15 10:42:47,067 INFO:cimcLib:delete_vlan()[line 11001] Check that the VLAN exists
+2021-02-15 10:42:47,069 INFO:util:SPY: top
+2021-02-15 10:42:47,072 INFO:util:SPY: 
+2021-02-15 10:42:47,072 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:42:47,075 INFO:util:SPY: scope eth-uplink
+2021-02-15 10:42:47,078 INFO:util:SPY: 
+2021-02-15 10:42:47,078 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink # 
+2021-02-15 10:42:47,081 INFO:util:SPY: show vlan QALI_VLAN_1_1
+2021-02-15 10:42:47,083 INFO:util:SPY: 
+2021-02-15 10:42:47,084 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink # 
+2021-02-15 10:42:47,084 INFO:cimcLib:delete_vlan()[line 11012] VLAN does not exist
+2021-02-15 10:42:47,084 INFO:cimcLib:delete_vlan()[line 11015] Verify that VLAN was deleted
+2021-02-15 10:42:47,087 INFO:util:SPY: top
+2021-02-15 10:42:47,090 INFO:util:SPY: 
+2021-02-15 10:42:47,090 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:42:47,093 INFO:util:SPY: scope eth-uplink
+2021-02-15 10:42:47,099 INFO:util:SPY: 
+2021-02-15 10:42:47,100 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink # 
+2021-02-15 10:42:47,103 INFO:util:SPY: show vlan QALI_VLAN_1_1
+2021-02-15 10:42:47,106 INFO:util:SPY: 
+2021-02-15 10:42:47,106 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink # 
+2021-02-15 10:42:47,106 INFO:cimcLib:delete_vlan()[line 11031] END [True]
+2021-02-15 10:42:47,107 INFO:cimcLib:delete_host_fw_pack()[line 11076] BEGIN: Host Firmware Package = QALI_HFP_1_1
+2021-02-15 10:43:03,379 INFO:util:SPY: scope org  /
+2021-02-15 10:43:03,508 INFO:util:SPY: 
+2021-02-15 10:43:03,510 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:03,517 INFO:util:SPY: show fw-host-pack
+2021-02-15 10:43:03,550 INFO:util:SPY: 
+2021-02-15 10:43:03,552 INFO:util:SPY: 
+2021-02-15 10:43:03,552 INFO:util:SPY: Server Host Pack:
+2021-02-15 10:43:03,552 INFO:util:SPY:     Name                 Mode
+2021-02-15 10:43:03,552 INFO:util:SPY:     -------------------- ----
+2021-02-15 10:43:03,552 INFO:util:SPY:     default              Staged
+2021-02-15 10:43:03,552 INFO:util:SPY:     hfp1                 Staged
+2021-02-15 10:43:03,552 INFO:util:SPY:     hfp1-3               Staged
+2021-02-15 10:43:03,552 INFO:util:SPY:     hfp11                Staged
+2021-02-15 10:43:03,552 INFO:util:SPY:     hfp111               Staged
+2021-02-15 10:43:03,553 INFO:util:SPY:     hfp1_1               Staged
+2021-02-15 10:43:03,553 INFO:util:SPY:     hfp1_2               Staged
+2021-02-15 10:43:03,553 INFO:util:SPY:     hfpn                 Staged
+2021-02-15 10:43:03,553 INFO:util:SPY:     QALI_HFP_1_2         Staged
+2021-02-15 10:43:03,553 INFO:util:SPY:     QALI_HFP_1_3         Staged
+2021-02-15 10:43:03,553 INFO:util:SPY:     QALI_HFP_1_5         Staged
+2021-02-15 10:43:03,553 INFO:util:SPY:     QALI_HFP_1_7         Staged
+2021-02-15 10:43:03,553 INFO:util:SPY:     sanityHFP            Staged
+2021-02-15 10:43:03,554 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:03,558 INFO:cimcLib:delete_host_fw_pack()[line 11086] Host Firmware Package "QALI_HFP_1_1" does not exist
+2021-02-15 10:43:03,562 INFO:cimcLib:delete_host_fw_pack()[line 11100] END [True]
+2021-02-15 10:43:03,563 INFO:cimcLib:unprovision()[line 8271] END
+2021-02-15 10:43:03,563 INFO:cimcLib:quick_provision()[line 8033] Provision local disk policy
+2021-02-15 10:43:03,563 INFO:cimcLib:create_local_disk_policy()[line 8612] BEGIN: local_disk_policy = QALI_LDP_1_1, flexflash_state = disable, raid_report = disable
+2021-02-15 10:43:03,563 INFO:cimcLib:create_local_disk_policy()[line 8620] Check that the local disk policy exists
+2021-02-15 10:43:03,566 INFO:util:SPY: top
+2021-02-15 10:43:03,570 INFO:util:SPY: 
+2021-02-15 10:43:03,570 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:03,572 INFO:util:SPY: scope org
+2021-02-15 10:43:03,575 INFO:util:SPY: 
+2021-02-15 10:43:03,580 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:03,587 INFO:util:SPY: show local-disk-config-policy QALI_LDP_1_1
+2021-02-15 10:43:03,714 INFO:util:SPY: 
+2021-02-15 10:43:03,715 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:03,715 INFO:cimcLib:create_local_disk_policy()[line 8639] Create new local disk policy: QALI_LDP_1_1
+2021-02-15 10:43:03,718 INFO:util:SPY: top
+2021-02-15 10:43:03,721 INFO:util:SPY: 
+2021-02-15 10:43:03,723 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:03,729 INFO:util:SPY: scope org
+2021-02-15 10:43:03,733 INFO:util:SPY: 
+2021-02-15 10:43:03,734 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:03,741 INFO:util:SPY: create local-disk-config-policy QALI_LDP_1_1
+2021-02-15 10:43:03,747 INFO:util:SPY: 
+2021-02-15 10:43:03,749 INFO:util:SPY: ucs-reg-tb09-A /org/local-disk-config-policy* # 
+2021-02-15 10:43:03,751 INFO:cimcLib:create_local_disk_policy()[line 8649] Set parameters for new local disk policy and commit
+2021-02-15 10:43:03,757 INFO:util:SPY: set flexflash-state disable
+2021-02-15 10:43:03,766 INFO:util:SPY: 
+2021-02-15 10:43:03,767 INFO:util:SPY: ucs-reg-tb09-A /org/local-disk-config-policy* # 
+2021-02-15 10:43:03,770 INFO:util:SPY: set flexflash-raid-reporting-state disable
+2021-02-15 10:43:03,774 INFO:util:SPY: 
+2021-02-15 10:43:03,775 INFO:util:SPY: ucs-reg-tb09-A /org/local-disk-config-policy* # 
+2021-02-15 10:43:03,778 INFO:util:SPY: set protect no
+2021-02-15 10:43:03,780 INFO:util:SPY: 
+2021-02-15 10:43:03,783 INFO:util:SPY: ucs-reg-tb09-A /org/local-disk-config-policy* # 
+2021-02-15 10:43:03,786 INFO:util:SPY: set descr "Policy create by QALI BMC Test Suite"
+2021-02-15 10:43:03,790 INFO:util:SPY: 
+2021-02-15 10:43:03,790 INFO:util:SPY: ucs-reg-tb09-A /org/local-disk-config-policy* # 
+2021-02-15 10:43:03,793 INFO:util:SPY: set mode any-configuration
+2021-02-15 10:43:03,795 INFO:util:SPY: 
+2021-02-15 10:43:03,797 INFO:util:SPY: ucs-reg-tb09-A /org/local-disk-config-policy* # 
+2021-02-15 10:43:03,800 INFO:util:SPY: commit-buffer
+2021-02-15 10:43:03,864 INFO:util:SPY: 
+2021-02-15 10:43:03,868 INFO:util:SPY: ucs-reg-tb09-A /org/local-disk-config-policy # 
+2021-02-15 10:43:03,870 INFO:cimcLib:create_local_disk_policy()[line 8663] Verify that local disk policy was created
+2021-02-15 10:43:03,872 INFO:util:SPY: top
+2021-02-15 10:43:03,878 INFO:util:SPY: 
+2021-02-15 10:43:03,881 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:03,886 INFO:util:SPY: scope org
+2021-02-15 10:43:03,893 INFO:util:SPY: 
+2021-02-15 10:43:03,895 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:03,902 INFO:util:SPY: show local-disk-config-policy QALI_LDP_1_1
+2021-02-15 10:43:03,965 INFO:util:SPY: 
+2021-02-15 10:43:03,967 INFO:util:SPY: 
+2021-02-15 10:43:03,968 INFO:util:SPY: Local Disk Config Policy:
+2021-02-15 10:43:03,970 INFO:util:SPY:     Name                 Mode                                    Protect Configuration
+2021-02-15 10:43:03,970 INFO:util:SPY:     -------------------- --------------------------------------- ---------------------
+2021-02-15 10:43:03,971 INFO:util:SPY:     QALI_LDP_1_1         Any Configuration                       No
+2021-02-15 10:43:03,971 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:03,972 INFO:cimcLib:create_local_disk_policy()[line 8682] END [True]
+2021-02-15 10:43:03,975 INFO:cimcLib:quick_provision()[line 8060] Provision default boot policy
+2021-02-15 10:43:03,976 INFO:cimcLib:create_default_boot_policy()[line 8797] BEGIN: boot_policy = QALI_BP_1_1
+2021-02-15 10:43:03,981 INFO:cimcLib:create_default_boot_policy()[line 8809] Check that the boot policy exists
+2021-02-15 10:43:03,984 INFO:util:SPY: top
+2021-02-15 10:43:03,991 INFO:util:SPY: 
+2021-02-15 10:43:03,992 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:04,000 INFO:util:SPY: scope org
+2021-02-15 10:43:04,009 INFO:util:SPY: 
+2021-02-15 10:43:04,010 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:04,022 INFO:util:SPY: show boot-policy QALI_BP_1_1
+2021-02-15 10:43:04,024 INFO:util:SPY: 
+2021-02-15 10:43:04,026 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:04,031 INFO:cimcLib:create_default_boot_policy()[line 8826] Create new boot policy: QALI_BP_1_1
+2021-02-15 10:43:04,034 INFO:util:SPY: top
+2021-02-15 10:43:04,037 INFO:util:SPY: 
+2021-02-15 10:43:04,037 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:04,044 INFO:util:SPY: scope org
+2021-02-15 10:43:04,048 INFO:util:SPY: 
+2021-02-15 10:43:04,050 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:04,057 INFO:util:SPY: create boot-policy QALI_BP_1_1
+2021-02-15 10:43:04,062 INFO:util:SPY: 
+2021-02-15 10:43:04,064 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy* # 
+2021-02-15 10:43:04,072 INFO:util:SPY: top
+2021-02-15 10:43:04,073 INFO:util:SPY: 
+2021-02-15 10:43:04,073 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:04,092 INFO:util:SPY: show chassis
+2021-02-15 10:43:04,095 INFO:util:SPY: 
+2021-02-15 10:43:04,095 INFO:util:SPY: 
+2021-02-15 10:43:04,095 INFO:util:SPY: Chassis:
+2021-02-15 10:43:04,095 INFO:util:SPY:     Chassis    Overall Status           Admin State          Chassis Profile
+2021-02-15 10:43:04,095 INFO:util:SPY:     ---------- ------------------------ -------------------- ---------------
+2021-02-15 10:43:04,095 INFO:util:SPY:              1 Power Problem            Acknowledged
+2021-02-15 10:43:04,095 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:04,100 INFO:util:SPY: scope chassis  1
+2021-02-15 10:43:04,102 INFO:util:SPY: 
+2021-02-15 10:43:04,103 INFO:util:SPY: ucs-reg-tb09-A /chassis # 
+2021-02-15 10:43:04,105 INFO:util:SPY: show detail
+2021-02-15 10:43:04,122 INFO:util:SPY: 
+2021-02-15 10:43:04,124 INFO:util:SPY: 
+2021-02-15 10:43:04,124 INFO:util:SPY: Chassis:
+2021-02-15 10:43:04,124 INFO:util:SPY:     Chassis: 1
+2021-02-15 10:43:04,124 INFO:util:SPY:     User Label:
+2021-02-15 10:43:04,124 INFO:util:SPY:     Chassis Profile:
+2021-02-15 10:43:04,124 INFO:util:SPY:     Overall Status: Power Problem
+2021-02-15 10:43:04,124 INFO:util:SPY:     Oper qualifier: Psu Power
+2021-02-15 10:43:04,124 INFO:util:SPY:     Operability: Operable
+2021-02-15 10:43:04,125 INFO:util:SPY:     Conf State: Ok
+2021-02-15 10:43:04,125 INFO:util:SPY:     Admin State: Acknowledged
+2021-02-15 10:43:04,125 INFO:util:SPY:     Conn Path: A,B
+2021-02-15 10:43:04,125 INFO:util:SPY:     Conn Status: A,B
+2021-02-15 10:43:04,125 INFO:util:SPY:     Managing Instance: A
+2021-02-15 10:43:04,125 INFO:util:SPY:     Product Name: Cisco UCS 5108 AC2 Chassis
+2021-02-15 10:43:04,125 INFO:util:SPY:     PID: UCSB-5108-AC2
+2021-02-15 10:43:04,125 INFO:util:SPY:     VID: V03
+2021-02-15 10:43:04,126 INFO:util:SPY:     Part Number: 68-5091-04
+2021-02-15 10:43:04,126 INFO:util:SPY:     Vendor: Cisco Systems Inc
+2021-02-15 10:43:04,126 INFO:util:SPY:     Model: UCSB-5108-AC2
+2021-02-15 10:43:04,126 INFO:util:SPY:     Serial (SN): FOX1936GPFE
+2021-02-15 10:43:04,126 INFO:util:SPY:     HW Revision: 0
+2021-02-15 10:43:04,126 INFO:util:SPY:     Mfg Date: 2015-08-29T00:00:00.000
+2021-02-15 10:43:04,126 INFO:util:SPY:     Power State: Ok
+2021-02-15 10:43:04,126 INFO:util:SPY:     Thermal Status: Ok
+2021-02-15 10:43:04,126 INFO:util:SPY:     SEEPROM operability status: Operable
+2021-02-15 10:43:04,127 INFO:util:SPY:     Dynamic Reallocation: Chassis
+2021-02-15 10:43:04,127 INFO:util:SPY:     Reserved Power Budget (W): 600
+2021-02-15 10:43:04,127 INFO:util:SPY:     PSU Capacity (W): 5000
+2021-02-15 10:43:04,127 INFO:util:SPY:     PSU Line Mode: High Line
+2021-02-15 10:43:04,127 INFO:util:SPY:     PSU State: Ok
+2021-02-15 10:43:04,127 INFO:util:SPY:     Current Task 1:
+2021-02-15 10:43:04,127 INFO:util:SPY:     Current Task 2:
+2021-02-15 10:43:04,127 INFO:util:SPY: ucs-reg-tb09-A /chassis # 
+2021-02-15 10:43:04,131 INFO:util:SPY: show server
+2021-02-15 10:43:04,460 INFO:util:SPY: 
+2021-02-15 10:43:04,462 INFO:util:SPY: 
+2021-02-15 10:43:04,463 INFO:util:SPY: Server:
+2021-02-15 10:43:04,463 INFO:util:SPY:     Slot    Overall Status        Service Profile      Availability
+2021-02-15 10:43:04,463 INFO:util:SPY:     ------- --------------------- -------------------- ------------
+2021-02-15 10:43:04,464 INFO:util:SPY:           1 Config                                     Unavailable
+2021-02-15 10:43:04,464 INFO:util:SPY:           2 Ok                    QALI_SP_1_2          Unavailable
+2021-02-15 10:43:04,464 INFO:util:SPY:           3 Config                QALI_SP_1_3          Unavailable
+2021-02-15 10:43:04,464 INFO:util:SPY:           5 Ok                    QALI_SP_1_5          Unavailable
+2021-02-15 10:43:04,465 INFO:util:SPY:           7 Config                                     Unavailable
+2021-02-15 10:43:04,465 INFO:util:SPY: ucs-reg-tb09-A /chassis # 
+2021-02-15 10:43:04,497 INFO:util:SPY: scope server  1
+2021-02-15 10:43:04,504 INFO:util:SPY: 
+2021-02-15 10:43:04,506 INFO:util:SPY: ucs-reg-tb09-A /chassis/server # 
+2021-02-15 10:43:04,509 INFO:util:SPY: show detail
+2021-02-15 10:43:04,573 INFO:util:SPY: 
+2021-02-15 10:43:04,575 INFO:util:SPY: 
+2021-02-15 10:43:04,579 INFO:util:SPY: Server:
+2021-02-15 10:43:04,579 INFO:util:SPY:     Slot: 1
+2021-02-15 10:43:04,579 INFO:util:SPY:     Name:
+2021-02-15 10:43:04,579 INFO:util:SPY:     User Label:
+2021-02-15 10:43:04,580 INFO:util:SPY:     Overall Status: Config
+2021-02-15 10:43:04,580 INFO:util:SPY:     Oper Qualifier: N/A
+2021-02-15 10:43:04,580 INFO:util:SPY:     Service Profile:
+2021-02-15 10:43:04,580 INFO:util:SPY:     Asset Tag:
+2021-02-15 10:43:04,580 INFO:util:SPY:     Association: Removing
+2021-02-15 10:43:04,580 INFO:util:SPY:     Availability: Unavailable
+2021-02-15 10:43:04,581 INFO:util:SPY:     Discovery: Complete
+2021-02-15 10:43:04,581 INFO:util:SPY:     Conn Path: A,B
+2021-02-15 10:43:04,581 INFO:util:SPY:     Conn Status: A,B
+2021-02-15 10:43:04,581 INFO:util:SPY:     Managing Instance: B
+2021-02-15 10:43:04,581 INFO:util:SPY:     Admin Power: Policy
+2021-02-15 10:43:04,581 INFO:util:SPY:     Oper Power: Off
+2021-02-15 10:43:04,581 INFO:util:SPY:     Admin State: In Service
+2021-02-15 10:43:04,581 INFO:util:SPY:     Product Name: Cisco UCS B200 M4
+2021-02-15 10:43:04,582 INFO:util:SPY:     PID: UCSB-B200-M4
+2021-02-15 10:43:04,582 INFO:util:SPY:     VID: V01
+2021-02-15 10:43:04,582 INFO:util:SPY:     Vendor: Cisco Systems Inc
+2021-02-15 10:43:04,582 INFO:util:SPY:     Serial (SN): FCH2012J3KQ
+2021-02-15 10:43:04,582 INFO:util:SPY:     HW Revision: 0
+2021-02-15 10:43:04,582 INFO:util:SPY:     Mfg Date: 2016-03-27T00:00:00.000
+2021-02-15 10:43:04,582 INFO:util:SPY:     Part Number: 73-15862-03
+2021-02-15 10:43:04,583 INFO:util:SPY:     SKU: UCSB-B200-M4
+2021-02-15 10:43:04,583 INFO:util:SPY:     Memory (MB): 32768
+2021-02-15 10:43:04,583 INFO:util:SPY:     Effective Memory (MB): 32768
+2021-02-15 10:43:04,583 INFO:util:SPY:     Operating Memory Speed (MHz): 1600
+2021-02-15 10:43:04,583 INFO:util:SPY:     Operating Memory Voltage: Regular Voltage
+2021-02-15 10:43:04,583 INFO:util:SPY:     Cores: 12
+2021-02-15 10:43:04,583 INFO:util:SPY:     Num Of Cores Enabled: 12
+2021-02-15 10:43:04,584 INFO:util:SPY:     Adapters: 2
+2021-02-15 10:43:04,584 INFO:util:SPY:     Eth Host Interfaces: 0
+2021-02-15 10:43:04,584 INFO:util:SPY:     FC Host Interfaces: 0
+2021-02-15 10:43:04,584 INFO:util:SPY:     Burned-In UUID: 1561bf40-44d4-44f4-bf46-590c9fa397a8
+2021-02-15 10:43:04,584 INFO:util:SPY:     Dynamic UUID: 1561bf40-44d4-44f4-bf46-590c9fa397a8
+2021-02-15 10:43:04,584 INFO:util:SPY:     Current Task 1: Waiting for system reset on server(FSM-STAGE:sam:dme:ComputePhysicalDisassociate:BootWait)
+2021-02-15 10:43:04,585 INFO:util:SPY:     Current Task 2:
+2021-02-15 10:43:04,585 INFO:util:SPY:     Current Task 3:
+2021-02-15 10:43:04,585 INFO:util:SPY: ucs-reg-tb09-A /chassis/server # 
+2021-02-15 10:43:04,593 INFO:util:SPY: set boot-mode legacy
+2021-02-15 10:43:04,596 INFO:util:SPY: 
+2021-02-15 10:43:04,596 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy* # 
+2021-02-15 10:43:04,599 INFO:util:SPY: create storage
+2021-02-15 10:43:04,630 INFO:util:SPY: 
+2021-02-15 10:43:04,631 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy/storage* # 
+2021-02-15 10:43:04,634 INFO:util:SPY: set order 1
+2021-02-15 10:43:04,665 INFO:util:SPY: 
+2021-02-15 10:43:04,666 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy/storage* # 
+2021-02-15 10:43:04,673 INFO:util:SPY: create local
+2021-02-15 10:43:04,689 INFO:util:SPY: 
+2021-02-15 10:43:04,691 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy/storage/local* # 
+2021-02-15 10:43:04,698 INFO:util:SPY: create local-any
+2021-02-15 10:43:04,827 INFO:util:SPY: 
+2021-02-15 10:43:04,829 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy/storage/local/local-any* # 
+2021-02-15 10:43:04,836 INFO:util:SPY: set order 1
+2021-02-15 10:43:04,853 INFO:util:SPY: 
+2021-02-15 10:43:04,856 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy/storage/local/local-any* # 
+2021-02-15 10:43:04,861 INFO:util:SPY: up
+2021-02-15 10:43:04,877 INFO:util:SPY: 
+2021-02-15 10:43:04,878 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy/storage/local* # 
+2021-02-15 10:43:04,884 INFO:util:SPY: up
+2021-02-15 10:43:04,894 INFO:util:SPY: 
+2021-02-15 10:43:04,895 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy/storage* # 
+2021-02-15 10:43:04,897 INFO:util:SPY: up
+2021-02-15 10:43:04,904 INFO:util:SPY: 
+2021-02-15 10:43:04,904 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy* # 
+2021-02-15 10:43:04,907 INFO:util:SPY: create lan
+2021-02-15 10:43:04,970 INFO:util:SPY: 
+2021-02-15 10:43:04,971 INFO:util:SPY: create lan
+2021-02-15 10:43:04,971 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy/lan* # 
+2021-02-15 10:43:04,974 INFO:util:SPY: set order 2
+2021-02-15 10:43:05,037 INFO:util:SPY: 
+2021-02-15 10:43:05,037 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy/lan* # 
+2021-02-15 10:43:05,041 INFO:util:SPY: create path primary
+2021-02-15 10:43:05,049 INFO:util:SPY: 
+2021-02-15 10:43:05,050 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy/lan/path* # 
+2021-02-15 10:43:05,052 INFO:util:SPY: set vnic QALI_VNIC_1_1
+2021-02-15 10:43:05,059 INFO:util:SPY: 
+2021-02-15 10:43:05,059 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy/lan/path* # 
+2021-02-15 10:43:05,062 INFO:util:SPY: up
+2021-02-15 10:43:05,069 INFO:util:SPY: 
+2021-02-15 10:43:05,069 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy/lan* # 
+2021-02-15 10:43:05,072 INFO:util:SPY: up
+2021-02-15 10:43:05,078 INFO:util:SPY: 
+2021-02-15 10:43:05,079 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy* # 
+2021-02-15 10:43:05,086 INFO:util:SPY: create virtual-media read-only
+2021-02-15 10:43:05,095 INFO:util:SPY: 
+2021-02-15 10:43:05,098 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy/virtual-media* # 
+2021-02-15 10:43:05,107 INFO:util:SPY: set order 3
+2021-02-15 10:43:05,125 INFO:util:SPY: 
+2021-02-15 10:43:05,126 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy/virtual-media* # 
+2021-02-15 10:43:05,146 INFO:util:SPY: up
+2021-02-15 10:43:05,151 INFO:util:SPY: 
+2021-02-15 10:43:05,152 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy* # 
+2021-02-15 10:43:05,159 INFO:util:SPY: create virtual-media read-write
+2021-02-15 10:43:05,174 INFO:util:SPY: 
+2021-02-15 10:43:05,177 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy/virtual-media* # 
+2021-02-15 10:43:05,181 INFO:util:SPY: set order 4
+2021-02-15 10:43:05,214 INFO:util:SPY: 
+2021-02-15 10:43:05,216 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy/virtual-media* # 
+2021-02-15 10:43:05,231 INFO:util:SPY: commit-buffer
+2021-02-15 10:43:05,247 INFO:util:SPY: 
+2021-02-15 10:43:05,247 INFO:util:SPY: ucs-reg-tb09-A /org/boot-policy/virtual-media # 
+2021-02-15 10:43:05,247 INFO:cimcLib:create_default_boot_policy()[line 8861] Verify that boot policy was created
+2021-02-15 10:43:05,250 INFO:util:SPY: top
+2021-02-15 10:43:05,254 INFO:util:SPY: 
+2021-02-15 10:43:05,259 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:05,264 INFO:util:SPY: scope org
+2021-02-15 10:43:05,270 INFO:util:SPY: 
+2021-02-15 10:43:05,272 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:05,275 INFO:util:SPY: show boot-policy QALI_BP_1_1
+2021-02-15 10:43:05,279 INFO:util:SPY: 
+2021-02-15 10:43:05,280 INFO:util:SPY: 
+2021-02-15 10:43:05,280 INFO:util:SPY: Boot Policy:
+2021-02-15 10:43:05,280 INFO:util:SPY:     Name                 Purpose     Reboot on Update Boot Mode
+2021-02-15 10:43:05,280 INFO:util:SPY:     -------------------- ----------- ---------------- ---------
+2021-02-15 10:43:05,280 INFO:util:SPY:     QALI_BP_1_1          Operational No               Legacy
+2021-02-15 10:43:05,280 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:05,281 INFO:cimcLib:create_default_boot_policy()[line 8878] END [True]
+2021-02-15 10:43:05,281 INFO:cimcLib:quick_provision()[line 8074] Provision bios policy
+2021-02-15 10:43:05,281 INFO:cimcLib:create_bios_policy()[line 8905] BEGIN: bios_policy = QALI_BIOSSP_1_1, random_gen = False, sol_policy = QALI_SOL_1_1
+2021-02-15 10:43:05,281 INFO:cimcLib:create_bios_policy()[line 9110] Check that the bios policy exists
+2021-02-15 10:43:05,284 INFO:util:SPY: top
+2021-02-15 10:43:05,287 INFO:util:SPY: 
+2021-02-15 10:43:05,288 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:05,291 INFO:util:SPY: scope org /
+2021-02-15 10:43:05,297 INFO:util:SPY: 
+2021-02-15 10:43:05,300 INFO:util:SPY: scope org /
+2021-02-15 10:43:05,303 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:05,314 INFO:util:SPY: show bios-policy QALI_BIOSSP_1_1
+2021-02-15 10:43:05,318 INFO:util:SPY: 
+2021-02-15 10:43:05,318 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:05,319 INFO:cimcLib:create_bios_policy()[line 9141] Create new bios policy with platform defaults on all bios settings, and SOL enabled
+2021-02-15 10:43:05,322 INFO:util:SPY: top
+2021-02-15 10:43:05,328 INFO:util:SPY: 
+2021-02-15 10:43:05,331 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:05,336 INFO:util:SPY: scope org
+2021-02-15 10:43:05,344 INFO:util:SPY: 
+2021-02-15 10:43:05,345 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:05,352 INFO:util:SPY: create bios-policy QALI_BIOSSP_1_1
+2021-02-15 10:43:05,360 INFO:util:SPY: 
+2021-02-15 10:43:05,362 INFO:util:SPY: ucs-reg-tb09-A /org/bios-policy* # 
+2021-02-15 10:43:05,393 INFO:util:SPY: set console-redir-config console-redir serial-port-a
+2021-02-15 10:43:05,395 INFO:util:SPY: 
+2021-02-15 10:43:05,395 INFO:util:SPY: ucs-reg-tb09-A /org/bios-policy* # 
+2021-02-15 10:43:05,398 INFO:util:SPY: set console-redir-config baud-rate 115200
+2021-02-15 10:43:05,406 INFO:util:SPY: 
+2021-02-15 10:43:05,407 INFO:util:SPY: ucs-reg-tb09-A /org/bios-policy* # 
+2021-02-15 10:43:05,410 INFO:util:SPY: set console-redir-config terminal-type vt100-plus
+2021-02-15 10:43:05,412 INFO:util:SPY: 
+2021-02-15 10:43:05,414 INFO:util:SPY: ucs-reg-tb09-A /org/bios-policy* # 
+2021-02-15 10:43:05,420 INFO:util:SPY: set console-redir-config legacy-os-redir enabled
+2021-02-15 10:43:05,424 INFO:util:SPY: 
+2021-02-15 10:43:05,426 INFO:util:SPY: ucs-reg-tb09-A /org/bios-policy* # 
+2021-02-15 10:43:05,429 INFO:util:SPY: commit-buffer
+2021-02-15 10:43:07,560 INFO:util:SPY: 
+2021-02-15 10:43:07,561 INFO:util:SPY: ucs-reg-tb09-A /org/bios-policy # 
+2021-02-15 10:43:07,565 INFO:util:SPY: top; scope org; show sol-policy
+2021-02-15 10:43:07,793 INFO:util:SPY: 
+2021-02-15 10:43:07,793 INFO:util:SPY: 
+2021-02-15 10:43:07,794 INFO:util:SPY: SOL Policy:
+2021-02-15 10:43:07,794 INFO:util:SPY:     Name                 SOL State Speed
+2021-02-15 10:43:07,794 INFO:util:SPY:     -------------------- --------- -----
+2021-02-15 10:43:07,795 INFO:util:SPY:     QALI_SOL_1_1         Enable    115200
+2021-02-15 10:43:07,795 INFO:util:SPY:     QALI_SOL_1_2         Enable    115200
+2021-02-15 10:43:07,795 INFO:util:SPY:     QALI_SOL_1_3         Enable    115200
+2021-02-15 10:43:07,795 INFO:util:SPY:     QALI_SOL_1_4         Enable    115200
+2021-02-15 10:43:07,796 INFO:util:SPY:     QALI_SOL_1_5         Enable    115200
+2021-02-15 10:43:07,796 INFO:util:SPY:     QALI_SOL_1_7         Enable    115200
+2021-02-15 10:43:07,796 INFO:util:SPY:     QALI_SOL_2_7         Enable    115200
+2021-02-15 10:43:07,796 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:07,800 INFO:cimcLib:create_bios_policy()[line 9192] Verify that bios policy was created
+2021-02-15 10:43:07,807 INFO:util:SPY: top
+2021-02-15 10:43:07,809 INFO:util:SPY: 
+2021-02-15 10:43:07,810 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:07,813 INFO:util:SPY: scope org /
+2021-02-15 10:43:07,877 INFO:util:SPY: 
+2021-02-15 10:43:07,878 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:07,881 INFO:util:SPY: show bios-policy QALI_BIOSSP_1_1
+2021-02-15 10:43:07,912 INFO:util:SPY: 
+2021-02-15 10:43:07,913 INFO:util:SPY: 
+2021-02-15 10:43:07,913 INFO:util:SPY: BIOS Policy:
+2021-02-15 10:43:07,915 INFO:util:SPY:     Name       Reboot on BIOS Policy Change
+2021-02-15 10:43:07,920 INFO:util:SPY:     ---------- ----------------------------
+2021-02-15 10:43:07,922 INFO:util:SPY:     QALI_BIOSSP_1_1
+2021-02-15 10:43:07,925 INFO:util:SPY:                No
+2021-02-15 10:43:07,930 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:07,932 INFO:cimcLib:create_bios_policy()[line 9209] End [True]
+2021-02-15 10:43:07,936 INFO:cimcLib:quick_provision()[line 8088] Provision Host Firmware Package
+2021-02-15 10:43:07,938 INFO:cimcLib:delete_host_fw_pack()[line 11076] BEGIN: Host Firmware Package = QALI_HFP_1_1
+2021-02-15 10:43:07,942 INFO:cimcLib:delete_host_fw_pack()[line 11086] Host Firmware Package "QALI_HFP_1_1" does not exist
+2021-02-15 10:43:07,944 INFO:cimcLib:delete_host_fw_pack()[line 11100] END [True]
+2021-02-15 10:43:07,948 INFO:cimcLib:create_host_fw_pack()[line 9793] BEGIN: host_fw_pack = QALI_HFP_1_1
+2021-02-15 10:43:07,950 INFO:cimcLib:create_host_fw_pack()[line 9801] Check that the Host Firmware Package exists
+2021-02-15 10:43:07,954 INFO:cimcLib:create_host_fw_pack()[line 9813] Create new Host Firmware Package "QALI_HFP_1_1"
+2021-02-15 10:43:07,960 INFO:util:SPY: top
+2021-02-15 10:43:07,964 INFO:util:SPY: 
+2021-02-15 10:43:07,964 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:07,968 INFO:util:SPY: scope org  /
+2021-02-15 10:43:07,970 INFO:util:SPY: 
+2021-02-15 10:43:07,972 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:07,978 INFO:util:SPY: create fw-host-pack QALI_HFP_1_1
+2021-02-15 10:43:07,981 INFO:util:SPY: 
+2021-02-15 10:43:07,983 INFO:util:SPY: ucs-reg-tb09-A /org/fw-host-pack* # 
+2021-02-15 10:43:07,990 INFO:util:SPY: commit-buffer
+2021-02-15 10:43:08,024 INFO:util:SPY: 
+2021-02-15 10:43:08,028 INFO:util:SPY: ucs-reg-tb09-A /org/fw-host-pack # 
+2021-02-15 10:43:08,029 INFO:cimcLib:create_host_fw_pack()[line 9830] Set parameters for new Host Firmware Package
+2021-02-15 10:43:08,032 INFO:util:SPY: up;
+2021-02-15 10:43:08,035 INFO:util:SPY: 
+2021-02-15 10:43:08,037 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:08,044 INFO:util:SPY: scope fw-host-pack  QALI_HFP_1_1
+2021-02-15 10:43:08,046 INFO:util:SPY: 
+2021-02-15 10:43:08,046 INFO:util:SPY: ucs-reg-tb09-A /org/fw-host-pack # 
+2021-02-15 10:43:08,054 INFO:util:SPY: set blade-vers 
+2021-02-15 10:43:08,056 INFO:util:SPY: 
+2021-02-15 10:43:08,059 INFO:util:SPY:                                                  ^
+2021-02-15 10:43:08,063 INFO:util:SPY: % Incomplete Command at '^' marker
+2021-02-15 10:43:08,063 INFO:util:SPY: ucs-reg-tb09-A /org/fw-host-pack # 
+2021-02-15 10:43:08,071 INFO:util:SPY: set blade-vers ""
+2021-02-15 10:43:08,072 INFO:util:SPY: 
+2021-02-15 10:43:08,074 INFO:util:SPY: ucs-reg-tb09-A /org/fw-host-pack # 
+2021-02-15 10:43:08,087 INFO:util:SPY: set rack-vers 
+2021-02-15 10:43:08,090 INFO:util:SPY: 
+2021-02-15 10:43:08,092 INFO:util:SPY:                                                 ^
+2021-02-15 10:43:08,096 INFO:util:SPY: % Incomplete Command at '^' marker
+2021-02-15 10:43:08,098 INFO:util:SPY: ucs-reg-tb09-A /org/fw-host-pack # 
+2021-02-15 10:43:08,109 INFO:util:SPY: set rack-vers ""
+2021-02-15 10:43:08,110 INFO:util:SPY: 
+2021-02-15 10:43:08,111 INFO:util:SPY: ucs-reg-tb09-A /org/fw-host-pack # 
+2021-02-15 10:43:08,126 INFO:util:SPY: set descr HFP auto generated by QALi bmcqa provision
+2021-02-15 10:43:08,127 INFO:util:SPY: 
+2021-02-15 10:43:08,128 INFO:util:SPY:                                                  ^
+2021-02-15 10:43:08,128 INFO:util:SPY: % Invalid Command at '^' marker
+2021-02-15 10:43:08,128 INFO:util:SPY: ucs-reg-tb09-A /org/fw-host-pack # 
+2021-02-15 10:43:08,144 INFO:util:SPY: set descr "HFP auto generated by QALi bmcqa provision"
+2021-02-15 10:43:08,146 INFO:util:SPY: 
+2021-02-15 10:43:08,146 INFO:util:SPY: ucs-reg-tb09-A /org/fw-host-pack* # 
+2021-02-15 10:43:08,155 INFO:util:SPY: set servicepack-vers 
+2021-02-15 10:43:08,155 INFO:util:SPY: 
+2021-02-15 10:43:08,156 INFO:util:SPY:                                                         ^
+2021-02-15 10:43:08,156 INFO:util:SPY: % Incomplete Command at '^' marker
+2021-02-15 10:43:08,156 INFO:util:SPY: ucs-reg-tb09-A /org/fw-host-pack* # 
+2021-02-15 10:43:08,159 INFO:util:SPY: set servicepack-vers ""
+2021-02-15 10:43:08,190 INFO:util:SPY: 
+2021-02-15 10:43:08,190 INFO:util:SPY: ucs-reg-tb09-A /org/fw-host-pack* # 
+2021-02-15 10:43:08,194 INFO:util:SPY: commit-buffer
+2021-02-15 10:43:08,257 INFO:util:SPY: 
+2021-02-15 10:43:08,259 INFO:util:SPY: ucs-reg-tb09-A /org/fw-host-pack # 
+2021-02-15 10:43:08,259 INFO:cimcLib:create_host_fw_pack()[line 9844] exclude the specified component from the Host Firmware Package
+2021-02-15 10:43:08,264 INFO:util:SPY: create exclude-server-component persistent-memory-dimm-firmware
+2021-02-15 10:43:08,273 INFO:util:SPY: 
+2021-02-15 10:43:08,281 INFO:util:SPY: ucs-reg-tb09-A /org/fw-host-pack/exclude-server-component* # 
+2021-02-15 10:43:08,289 INFO:util:SPY: commit-buffer
+2021-02-15 10:43:08,418 INFO:util:SPY: 
+2021-02-15 10:43:08,419 INFO:util:SPY: ucs-reg-tb09-A /org/fw-host-pack/exclude-server-component # 
+2021-02-15 10:43:08,420 INFO:cimcLib:create_host_fw_pack()[line 9860] END [True]
+2021-02-15 10:43:08,420 INFO:cimcLib:quick_provision()[line 8096] Provision VLAN Group
+2021-02-15 10:43:08,420 INFO:cimcLib:create_vlan_group()[line 9235] BEGIN: vlan_group = QALI_VLAN_GROUP, native_vlan_name = None
+2021-02-15 10:43:08,420 INFO:cimcLib:create_vlan_group()[line 9242] Check that the VLAN Group exists
+2021-02-15 10:43:08,427 INFO:util:SPY: top
+2021-02-15 10:43:08,428 INFO:util:SPY: 
+2021-02-15 10:43:08,428 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:08,435 INFO:util:SPY: scope eth-uplink
+2021-02-15 10:43:08,439 INFO:util:SPY: 
+2021-02-15 10:43:08,441 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink # 
+2021-02-15 10:43:08,444 INFO:util:SPY: show vlan-group
+2021-02-15 10:43:08,507 INFO:util:SPY: 
+2021-02-15 10:43:08,510 INFO:util:SPY: 
+2021-02-15 10:43:08,512 INFO:util:SPY: Network Group:
+2021-02-15 10:43:08,512 INFO:util:SPY:     Name                 Policy Owner Size   Native VLAN Name     Native VLAN
+2021-02-15 10:43:08,512 INFO:util:SPY:     -------------------- ------------ ------ -------------------- -----------
+2021-02-15 10:43:08,512 INFO:util:SPY:     QALI_VLAN_GROUP      Local        5
+2021-02-15 10:43:08,512 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink # 
+2021-02-15 10:43:08,512 INFO:cimcLib:create_vlan_group()[line 9250] VLAN Group already exists - Return
+2021-02-15 10:43:08,513 INFO:cimcLib:quick_provision()[line 8105] Provision VLAN
+2021-02-15 10:43:08,513 INFO:cimcLib:create_vlan()[line 9330] BEGIN: vlan_name = QALI_VLAN_1_1, vlan_id = 4, vlan_group = QALI_VLAN_GROUP, vlan_native = no
+2021-02-15 10:43:08,513 INFO:cimcLib:create_vlan()[line 9337] Check that the VLAN exists
+2021-02-15 10:43:08,515 INFO:util:SPY: top
+2021-02-15 10:43:08,521 INFO:util:SPY: 
+2021-02-15 10:43:08,523 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:08,530 INFO:util:SPY: scope eth-uplink
+2021-02-15 10:43:08,532 INFO:util:SPY: 
+2021-02-15 10:43:08,532 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink # 
+2021-02-15 10:43:08,535 INFO:util:SPY: show vlan QALI_VLAN_1_1
+2021-02-15 10:43:08,541 INFO:util:SPY: 
+2021-02-15 10:43:08,542 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink # 
+2021-02-15 10:43:08,543 INFO:cimcLib:create_vlan()[line 9372] Create new VLAN: QALI_VLAN_1_1 with ID 4
+2021-02-15 10:43:08,545 INFO:util:SPY: top
+2021-02-15 10:43:08,554 INFO:util:SPY: 
+2021-02-15 10:43:08,556 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:08,567 INFO:util:SPY: scope eth-uplink
+2021-02-15 10:43:08,598 INFO:util:SPY: 
+2021-02-15 10:43:08,599 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink # 
+2021-02-15 10:43:08,602 INFO:util:SPY: create vlan QALI_VLAN_1_1 4
+2021-02-15 10:43:08,633 INFO:util:SPY: 
+2021-02-15 10:43:08,634 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink/vlan* # 
+2021-02-15 10:43:08,636 INFO:util:SPY: set native no
+2021-02-15 10:43:08,763 INFO:util:SPY: 
+2021-02-15 10:43:08,765 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink/vlan* # 
+2021-02-15 10:43:08,780 INFO:util:SPY: commit-buffer
+2021-02-15 10:43:08,844 INFO:util:SPY: 
+2021-02-15 10:43:08,847 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink/vlan # 
+2021-02-15 10:43:08,850 INFO:util:SPY: top
+2021-02-15 10:43:08,857 INFO:util:SPY: 
+2021-02-15 10:43:08,857 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:08,860 INFO:util:SPY: scope eth-uplink
+2021-02-15 10:43:08,863 INFO:util:SPY: 
+2021-02-15 10:43:08,866 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink # 
+2021-02-15 10:43:08,870 INFO:util:SPY: show vlan-group
+2021-02-15 10:43:08,885 INFO:util:SPY: 
+2021-02-15 10:43:08,886 INFO:util:SPY: 
+2021-02-15 10:43:08,893 INFO:util:SPY: Network Group:
+2021-02-15 10:43:08,897 INFO:util:SPY:     Name                 Policy Owner Size   Native VLAN Name     Native VLAN
+2021-02-15 10:43:08,900 INFO:util:SPY:     -------------------- ------------ ------ -------------------- -----------
+2021-02-15 10:43:08,904 INFO:util:SPY:     QALI_VLAN_GROUP      Local        6
+2021-02-15 10:43:08,906 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink # 
+2021-02-15 10:43:08,911 INFO:util:SPY: scope vlan-group QALI_VLAN_GROUP
+2021-02-15 10:43:08,974 INFO:util:SPY: 
+2021-02-15 10:43:08,978 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink/vlan-group # 
+2021-02-15 10:43:08,986 INFO:util:SPY: create member-vlan QALI_VLAN_1_1
+2021-02-15 10:43:08,993 INFO:util:SPY: 
+2021-02-15 10:43:08,993 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink/vlan-group/member-vlan* # 
+2021-02-15 10:43:08,997 INFO:util:SPY: commit-buffer
+2021-02-15 10:43:09,124 INFO:util:SPY: 
+2021-02-15 10:43:09,126 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink/vlan-group/member-vlan # 
+2021-02-15 10:43:09,127 INFO:cimcLib:create_vlan()[line 9395] Verify that VLAN was created
+2021-02-15 10:43:09,134 INFO:util:SPY: top
+2021-02-15 10:43:09,134 INFO:util:SPY: 
+2021-02-15 10:43:09,134 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:09,141 INFO:util:SPY: scope eth-uplink
+2021-02-15 10:43:09,141 INFO:util:SPY: 
+2021-02-15 10:43:09,141 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink # 
+2021-02-15 10:43:09,148 INFO:util:SPY: show vlan QALI_VLAN_1_1
+2021-02-15 10:43:09,148 INFO:util:SPY: 
+2021-02-15 10:43:09,149 INFO:util:SPY: 
+2021-02-15 10:43:09,149 INFO:util:SPY: VLAN:
+2021-02-15 10:43:09,149 INFO:util:SPY:     Name       VLAN ID    Fabric ID Native VLAN Sharing Type Primary Vlan Multicast Policy Name Compression Type
+2021-02-15 10:43:09,149 INFO:util:SPY:     ---------- ---------- --------- ----------- ------------ ------------ --------------------- ----------------
+2021-02-15 10:43:09,151 INFO:util:SPY:     QALI_VLAN_1_1
+2021-02-15 10:43:09,153 INFO:util:SPY:                4          Dual      No          None                                            Included
+2021-02-15 10:43:09,154 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink # 
+2021-02-15 10:43:09,154 INFO:cimcLib:create_vlan()[line 9406] Verify that VLAN was added to VLAN Group
+2021-02-15 10:43:09,157 INFO:util:SPY: top
+2021-02-15 10:43:09,164 INFO:util:SPY: 
+2021-02-15 10:43:09,164 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:09,167 INFO:util:SPY: scope eth-uplink
+2021-02-15 10:43:09,169 INFO:util:SPY: 
+2021-02-15 10:43:09,169 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink # 
+2021-02-15 10:43:09,172 INFO:util:SPY: scope vlan-group QALI_VLAN_GROUP
+2021-02-15 10:43:09,300 INFO:util:SPY: 
+2021-02-15 10:43:09,302 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink/vlan-group # 
+2021-02-15 10:43:09,317 INFO:util:SPY: show member-vlan
+2021-02-15 10:43:09,349 INFO:util:SPY: 
+2021-02-15 10:43:09,349 INFO:util:SPY: 
+2021-02-15 10:43:09,349 INFO:util:SPY: VLAN member:
+2021-02-15 10:43:09,349 INFO:util:SPY:     Network Name VLAN ID    VLAN
+2021-02-15 10:43:09,349 INFO:util:SPY:     ------------ ---------- ----
+2021-02-15 10:43:09,350 INFO:util:SPY:     QALI_VLAN_1_1
+2021-02-15 10:43:09,350 INFO:util:SPY:                  4          QALI_VLAN_1_1
+2021-02-15 10:43:09,350 INFO:util:SPY:     QALI_VLAN_1_2
+2021-02-15 10:43:09,350 INFO:util:SPY:                  4          QALI_VLAN_1_2
+2021-02-15 10:43:09,350 INFO:util:SPY:     QALI_VLAN_1_3
+2021-02-15 10:43:09,350 INFO:util:SPY:                  4          QALI_VLAN_1_3
+2021-02-15 10:43:09,350 INFO:util:SPY:     QALI_VLAN_1_4
+2021-02-15 10:43:09,350 INFO:util:SPY:                  4          QALI_VLAN_1_4
+2021-02-15 10:43:09,351 INFO:util:SPY:     QALI_VLAN_1_5
+2021-02-15 10:43:09,351 INFO:util:SPY:                  4          QALI_VLAN_1_5
+2021-02-15 10:43:09,351 INFO:util:SPY:     QALI_VLAN_1_7
+2021-02-15 10:43:09,351 INFO:util:SPY:                  4          QALI_VLAN_1_7
+2021-02-15 10:43:09,351 INFO:util:SPY:     QALI_VLAN_2_7
+2021-02-15 10:43:09,351 INFO:util:SPY:                  4          QALI_VLAN_2_7
+2021-02-15 10:43:09,351 INFO:util:SPY: ucs-reg-tb09-A /eth-uplink/vlan-group # 
+2021-02-15 10:43:09,352 INFO:cimcLib:create_vlan()[line 9429] END [True]
+2021-02-15 10:43:09,352 INFO:cimcLib:quick_provision()[line 8117] Provision MAC Pool
+2021-02-15 10:43:09,352 INFO:cimcLib:create_mac_pool()[line 9449] BEGIN: mac_pool = QALI_MAC, vlan_id = 4, mac_range = 10
+2021-02-15 10:43:09,352 INFO:cimcLib:create_mac_pool()[line 9458] Check that the MAC pool exists
+2021-02-15 10:43:09,355 INFO:util:SPY: top
+2021-02-15 10:43:09,361 INFO:util:SPY: 
+2021-02-15 10:43:09,362 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:09,369 INFO:util:SPY: scope org
+2021-02-15 10:43:09,369 INFO:util:SPY: 
+2021-02-15 10:43:09,371 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:09,383 INFO:util:SPY: show mac-pool QALI_MAC
+2021-02-15 10:43:09,447 INFO:util:SPY: 
+2021-02-15 10:43:09,447 INFO:util:SPY: 
+2021-02-15 10:43:09,447 INFO:util:SPY: MAC Pool:
+2021-02-15 10:43:09,447 INFO:util:SPY:     Name                 Size       Assigned
+2021-02-15 10:43:09,447 INFO:util:SPY:     -------------------- ---------- --------
+2021-02-15 10:43:09,447 INFO:util:SPY:     QALI_MAC                     11          3
+2021-02-15 10:43:09,447 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:09,448 INFO:cimcLib:create_mac_pool()[line 9466] MAC pool already exists - Return
+2021-02-15 10:43:09,448 INFO:cimcLib:create_vnic_template()[line 9544] BEGIN: vnic_template = QALI_VNIC_T_1_1, mac_pool = QALI_MAC, vlan_name = QALI_VLAN_1_1
+2021-02-15 10:43:09,448 INFO:cimcLib:create_vnic_template()[line 9552] Check that the VNIC Template exists
+2021-02-15 10:43:09,451 INFO:util:SPY: top
+2021-02-15 10:43:09,457 INFO:util:SPY: 
+2021-02-15 10:43:09,457 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:09,460 INFO:util:SPY: scope org
+2021-02-15 10:43:09,463 INFO:util:SPY: 
+2021-02-15 10:43:09,463 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:09,466 INFO:util:SPY: show vnic-templ QALI_VNIC_T_1_1
+2021-02-15 10:43:09,472 INFO:util:SPY: 
+2021-02-15 10:43:09,473 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:09,473 INFO:cimcLib:create_vnic_template()[line 9569] Create new VNIC Template: QALI_VNIC_T_1_1
+2021-02-15 10:43:09,476 INFO:util:SPY: top
+2021-02-15 10:43:09,482 INFO:util:SPY: 
+2021-02-15 10:43:09,483 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:09,485 INFO:util:SPY: scope org
+2021-02-15 10:43:09,488 INFO:util:SPY: 
+2021-02-15 10:43:09,488 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:09,491 INFO:util:SPY: create vnic-templ QALI_VNIC_T_1_1 target adapter
+2021-02-15 10:43:09,498 INFO:util:SPY: 
+2021-02-15 10:43:09,498 INFO:util:SPY: ucs-reg-tb09-A /org/vnic-templ* # 
+2021-02-15 10:43:09,498 INFO:cimcLib:create_vnic_template()[line 9579] Set VNIC Template parameters
+2021-02-15 10:43:09,501 INFO:util:SPY: set fabric a
+2021-02-15 10:43:09,504 INFO:util:SPY: 
+2021-02-15 10:43:09,504 INFO:util:SPY: ucs-reg-tb09-A /org/vnic-templ* # 
+2021-02-15 10:43:09,507 INFO:util:SPY: set mac-pool QALI_MAC
+2021-02-15 10:43:09,513 INFO:util:SPY: 
+2021-02-15 10:43:09,514 INFO:util:SPY: ucs-reg-tb09-A /org/vnic-templ* # 
+2021-02-15 10:43:09,517 INFO:util:SPY: create eth-if QALI_VLAN_1_1
+2021-02-15 10:43:09,548 INFO:util:SPY: 
+2021-02-15 10:43:09,550 INFO:util:SPY: ucs-reg-tb09-A /org/vnic-templ/eth-if* # 
+2021-02-15 10:43:09,557 INFO:util:SPY: set default-net yes
+2021-02-15 10:43:09,689 INFO:util:SPY: 
+2021-02-15 10:43:09,690 INFO:util:SPY: ucs-reg-tb09-A /org/vnic-templ/eth-if* # 
+2021-02-15 10:43:09,706 INFO:util:SPY: commit-buffer
+2021-02-15 10:43:09,709 INFO:util:SPY: 
+2021-02-15 10:43:09,709 INFO:util:SPY: ucs-reg-tb09-A /org/vnic-templ/eth-if # 
+2021-02-15 10:43:09,710 INFO:cimcLib:create_vnic_template()[line 9588] Verify that VNIC Template was created
+2021-02-15 10:43:09,712 INFO:util:SPY: top
+2021-02-15 10:43:09,719 INFO:util:SPY: 
+2021-02-15 10:43:09,719 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:09,722 INFO:util:SPY: scope org
+2021-02-15 10:43:09,724 INFO:util:SPY: 
+2021-02-15 10:43:09,724 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:09,727 INFO:util:SPY: show vnic-templ QALI_VNIC_T_1_1
+2021-02-15 10:43:09,734 INFO:util:SPY: 
+2021-02-15 10:43:09,737 INFO:util:SPY: 
+2021-02-15 10:43:09,739 INFO:util:SPY: vNIC Template:
+2021-02-15 10:43:09,743 INFO:util:SPY:     Name                 Type              Fabric ID
+2021-02-15 10:43:09,744 INFO:util:SPY:     -------------------- ----------------- ---------
+2021-02-15 10:43:09,745 INFO:util:SPY:     QALI_VNIC_T_1_1      Initial Template  A
+2021-02-15 10:43:09,745 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:09,745 INFO:cimcLib:create_vnic_template()[line 9605] END [True]
+2021-02-15 10:43:09,745 INFO:cimcLib:create_empty_service_profile_template()[line 9619] BEGIN: service_profile = QALI_SP_T_1_1
+2021-02-15 10:43:09,745 INFO:cimcLib:create_empty_service_profile_template()[line 9627] Check that the Service Profile Template exists
+2021-02-15 10:43:09,748 INFO:util:SPY: top
+2021-02-15 10:43:09,752 INFO:util:SPY: 
+2021-02-15 10:43:09,752 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:09,755 INFO:util:SPY: scope org
+2021-02-15 10:43:09,757 INFO:util:SPY: 
+2021-02-15 10:43:09,757 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:09,760 INFO:util:SPY: show service-profile QALI_SP_T_1_1
+2021-02-15 10:43:09,763 INFO:util:SPY: 
+2021-02-15 10:43:09,763 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:09,763 INFO:cimcLib:create_empty_service_profile_template()[line 9646] Create new Service Profile Template: QALI_SP_T_1_1
+2021-02-15 10:43:09,766 INFO:util:SPY: top
+2021-02-15 10:43:09,781 INFO:util:SPY: 
+2021-02-15 10:43:09,783 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:09,786 INFO:util:SPY: scope org
+2021-02-15 10:43:09,789 INFO:util:SPY: 
+2021-02-15 10:43:09,791 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:09,798 INFO:util:SPY: create service-profile QALI_SP_T_1_1 initial-template
+2021-02-15 10:43:09,832 INFO:util:SPY: 
+2021-02-15 10:43:09,834 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile* # 
+2021-02-15 10:43:09,839 INFO:util:SPY: commit-buffer
+2021-02-15 10:43:09,871 INFO:util:SPY: 
+2021-02-15 10:43:09,872 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile # 
+2021-02-15 10:43:09,872 INFO:cimcLib:create_empty_service_profile_template()[line 9658] Verify that Service Profile Template was created
+2021-02-15 10:43:09,875 INFO:util:SPY: top
+2021-02-15 10:43:09,882 INFO:util:SPY: 
+2021-02-15 10:43:09,884 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:09,891 INFO:util:SPY: scope org
+2021-02-15 10:43:09,893 INFO:util:SPY: 
+2021-02-15 10:43:09,897 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:09,903 INFO:util:SPY: show service-profile QALI_SP_T_1_1
+2021-02-15 10:43:09,937 INFO:util:SPY: 
+2021-02-15 10:43:09,938 INFO:util:SPY: 
+2021-02-15 10:43:09,940 INFO:util:SPY: Service Profile:
+2021-02-15 10:43:09,940 INFO:util:SPY:     Service Profile Name Type              Server  Assignment Association
+2021-02-15 10:43:09,941 INFO:util:SPY:     -------------------- ----------------- ------- ---------- -----------
+2021-02-15 10:43:09,941 INFO:util:SPY:     QALI_SP_T_1_1        Initial Template          Unassigned Unassociated
+2021-02-15 10:43:09,941 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:09,941 INFO:cimcLib:create_empty_service_profile_template()[line 9677] END [True]
+2021-02-15 10:43:09,941 INFO:cimcLib:set_disk_policy_to_service_profile()[line 10154] BEGIN: service_profile_template = QALI_SP_T_1_1, local_disk_policy = QALI_LDP_1_1
+2021-02-15 10:43:09,941 INFO:cimcLib:set_disk_policy_to_service_profile()[line 10162] Check that the Service Profile and Local Disk Policy exists
+2021-02-15 10:43:09,944 INFO:util:SPY: top
+2021-02-15 10:43:09,949 INFO:util:SPY: 
+2021-02-15 10:43:09,951 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:09,958 INFO:util:SPY: scope org
+2021-02-15 10:43:09,967 INFO:util:SPY: 
+2021-02-15 10:43:09,968 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:09,971 INFO:util:SPY: show service-profile QALI_SP_T_1_1
+2021-02-15 10:43:10,005 INFO:util:SPY: 
+2021-02-15 10:43:10,009 INFO:util:SPY: 
+2021-02-15 10:43:10,010 INFO:util:SPY: Service Profile:
+2021-02-15 10:43:10,010 INFO:util:SPY:     Service Profile Name Type              Server  Assignment Association
+2021-02-15 10:43:10,010 INFO:util:SPY:     -------------------- ----------------- ------- ---------- -----------
+2021-02-15 10:43:10,010 INFO:util:SPY:     QALI_SP_T_1_1        Initial Template          Unassigned Unassociated
+2021-02-15 10:43:10,010 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,013 INFO:util:SPY: top
+2021-02-15 10:43:10,019 INFO:util:SPY: 
+2021-02-15 10:43:10,022 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:10,025 INFO:util:SPY: scope org
+2021-02-15 10:43:10,028 INFO:util:SPY: 
+2021-02-15 10:43:10,032 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,035 INFO:util:SPY: show local-disk-config-policy QALI_LDP_1_1
+2021-02-15 10:43:10,038 INFO:util:SPY: 
+2021-02-15 10:43:10,040 INFO:util:SPY: 
+2021-02-15 10:43:10,045 INFO:util:SPY: Local Disk Config Policy:
+2021-02-15 10:43:10,045 INFO:util:SPY:     Name                 Mode                                    Protect Configuration
+2021-02-15 10:43:10,045 INFO:util:SPY:     -------------------- --------------------------------------- ---------------------
+2021-02-15 10:43:10,045 INFO:util:SPY:     QALI_LDP_1_1         Any Configuration                       No
+2021-02-15 10:43:10,045 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,046 INFO:cimcLib:set_disk_policy_to_service_profile()[line 10189] Add Local Disk Policy to Service Profile
+2021-02-15 10:43:10,048 INFO:util:SPY: top
+2021-02-15 10:43:10,052 INFO:util:SPY: 
+2021-02-15 10:43:10,055 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:10,060 INFO:util:SPY: scope org
+2021-02-15 10:43:10,062 INFO:util:SPY: 
+2021-02-15 10:43:10,062 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,069 INFO:util:SPY: scope service-profile QALI_SP_T_1_1
+2021-02-15 10:43:10,070 INFO:util:SPY: 
+2021-02-15 10:43:10,070 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile # 
+2021-02-15 10:43:10,077 INFO:util:SPY: set local-disk-policy QALI_LDP_1_1
+2021-02-15 10:43:10,079 INFO:util:SPY: 
+2021-02-15 10:43:10,079 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile* # 
+2021-02-15 10:43:10,082 INFO:util:SPY: commit-buffer
+2021-02-15 10:43:10,113 INFO:util:SPY: 
+2021-02-15 10:43:10,114 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile # 
+2021-02-15 10:43:10,114 INFO:cimcLib:set_disk_policy_to_service_profile()[line 10199] Verify Local Disk Policy was added to Service Profile
+2021-02-15 10:43:10,117 INFO:util:SPY: top
+2021-02-15 10:43:10,121 INFO:util:SPY: 
+2021-02-15 10:43:10,122 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:10,125 INFO:util:SPY: scope org
+2021-02-15 10:43:10,128 INFO:util:SPY: 
+2021-02-15 10:43:10,128 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,131 INFO:util:SPY: scope service-profile QALI_SP_T_1_1
+2021-02-15 10:43:10,134 INFO:util:SPY: 
+2021-02-15 10:43:10,134 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile # 
+2021-02-15 10:43:10,137 INFO:util:SPY: show local-disk-policy
+2021-02-15 10:43:10,169 INFO:util:SPY: 
+2021-02-15 10:43:10,169 INFO:util:SPY: 
+2021-02-15 10:43:10,169 INFO:util:SPY: Local Disk Config Policy:
+2021-02-15 10:43:10,169 INFO:util:SPY:     Name                 Mode                                    Protect Configuration
+2021-02-15 10:43:10,169 INFO:util:SPY:     -------------------- --------------------------------------- ---------------------
+2021-02-15 10:43:10,169 INFO:util:SPY:     QALI_LDP_1_1         Any Configuration                       No
+2021-02-15 10:43:10,169 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile # 
+2021-02-15 10:43:10,171 INFO:cimcLib:set_disk_policy_to_service_profile()[line 10217] END [True]
+2021-02-15 10:43:10,171 INFO:cimcLib:set_vnic_in_service_profile()[line 10074] BEGIN: service_profile = QALI_SP_T_1_1, vnic_name = QALI_VNIC_1_1, vnic_template = QALI_VNIC_T_1_1
+2021-02-15 10:43:10,171 INFO:cimcLib:set_vnic_in_service_profile()[line 10082] Check that the Service Profile and VNIC Template exists
+2021-02-15 10:43:10,174 INFO:util:SPY: top
+2021-02-15 10:43:10,180 INFO:util:SPY: 
+2021-02-15 10:43:10,185 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:10,190 INFO:util:SPY: scope org
+2021-02-15 10:43:10,198 INFO:util:SPY: 
+2021-02-15 10:43:10,200 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,207 INFO:util:SPY: show service-profile QALI_SP_T_1_1
+2021-02-15 10:43:10,271 INFO:util:SPY: 
+2021-02-15 10:43:10,273 INFO:util:SPY: 
+2021-02-15 10:43:10,273 INFO:util:SPY: Service Profile:
+2021-02-15 10:43:10,273 INFO:util:SPY:     Service Profile Name Type              Server  Assignment Association
+2021-02-15 10:43:10,273 INFO:util:SPY:     -------------------- ----------------- ------- ---------- -----------
+2021-02-15 10:43:10,273 INFO:util:SPY:     QALI_SP_T_1_1        Initial Template          Unassigned Unassociated
+2021-02-15 10:43:10,273 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,276 INFO:util:SPY: top
+2021-02-15 10:43:10,283 INFO:util:SPY: 
+2021-02-15 10:43:10,285 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:10,287 INFO:util:SPY: scope org
+2021-02-15 10:43:10,292 INFO:util:SPY: 
+2021-02-15 10:43:10,297 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,304 INFO:util:SPY: show vnic-templ QALI_VNIC_T_1_1
+2021-02-15 10:43:10,313 INFO:util:SPY: 
+2021-02-15 10:43:10,313 INFO:util:SPY: 
+2021-02-15 10:43:10,314 INFO:util:SPY: vNIC Template:
+2021-02-15 10:43:10,314 INFO:util:SPY:     Name                 Type              Fabric ID
+2021-02-15 10:43:10,314 INFO:util:SPY:     -------------------- ----------------- ---------
+2021-02-15 10:43:10,314 INFO:util:SPY:     QALI_VNIC_T_1_1      Initial Template  A
+2021-02-15 10:43:10,314 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,314 INFO:cimcLib:set_vnic_in_service_profile()[line 10105] Add VNIC Template to Service Profile
+2021-02-15 10:43:10,317 INFO:util:SPY: top
+2021-02-15 10:43:10,323 INFO:util:SPY: 
+2021-02-15 10:43:10,323 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:10,326 INFO:util:SPY: scope org
+2021-02-15 10:43:10,328 INFO:util:SPY: 
+2021-02-15 10:43:10,328 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,335 INFO:util:SPY: scope service-profile QALI_SP_T_1_1
+2021-02-15 10:43:10,340 INFO:util:SPY: 
+2021-02-15 10:43:10,340 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile # 
+2021-02-15 10:43:10,343 INFO:util:SPY: enter vnic QALI_VNIC_1_1
+2021-02-15 10:43:10,352 INFO:util:SPY: 
+2021-02-15 10:43:10,354 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile/vnic* # 
+2021-02-15 10:43:10,361 INFO:util:SPY: set template-name QALI_VNIC_T_1_1
+2021-02-15 10:43:10,369 INFO:util:SPY: 
+2021-02-15 10:43:10,372 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile/vnic* # 
+2021-02-15 10:43:10,377 INFO:util:SPY: commit-buffer
+2021-02-15 10:43:10,409 INFO:util:SPY: 
+2021-02-15 10:43:10,410 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile/vnic # 
+2021-02-15 10:43:10,410 INFO:cimcLib:set_vnic_in_service_profile()[line 10116] Verify VNIC Template set to Service Profile
+2021-02-15 10:43:10,413 INFO:util:SPY: top
+2021-02-15 10:43:10,420 INFO:util:SPY: 
+2021-02-15 10:43:10,420 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:10,422 INFO:util:SPY: scope org
+2021-02-15 10:43:10,425 INFO:util:SPY: 
+2021-02-15 10:43:10,425 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,432 INFO:util:SPY: scope service-profile QALI_SP_T_1_1
+2021-02-15 10:43:10,433 INFO:util:SPY: 
+2021-02-15 10:43:10,433 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile # 
+2021-02-15 10:43:10,441 INFO:util:SPY: show vnic QALI_VNIC_1_1
+2021-02-15 10:43:10,442 INFO:util:SPY: 
+2021-02-15 10:43:10,442 INFO:util:SPY: 
+2021-02-15 10:43:10,442 INFO:util:SPY: vNIC:
+2021-02-15 10:43:10,443 INFO:util:SPY:     Name               Fabric ID Dynamic MAC Addr   Virtualization Preference
+2021-02-15 10:43:10,443 INFO:util:SPY:     ------------------ --------- ------------------ -------------------------
+2021-02-15 10:43:10,443 INFO:util:SPY:     QALI_VNIC_1_1      A         Derived            NONE
+2021-02-15 10:43:10,443 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile # 
+2021-02-15 10:43:10,444 INFO:cimcLib:set_vnic_in_service_profile()[line 10134] END [True]
+2021-02-15 10:43:10,445 INFO:cimcLib:set_boot_policy_to_service_profile()[line 10234] BEGIN: service_profile = QALI_SP_T_1_1, boot_policy = QALI_BP_1_1
+2021-02-15 10:43:10,445 INFO:cimcLib:set_boot_policy_to_service_profile()[line 10242] Check that the Service Profile and Boot Policy exists
+2021-02-15 10:43:10,448 INFO:util:SPY: top
+2021-02-15 10:43:10,451 INFO:util:SPY: 
+2021-02-15 10:43:10,451 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:10,453 INFO:util:SPY: scope org
+2021-02-15 10:43:10,456 INFO:util:SPY: 
+2021-02-15 10:43:10,456 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,464 INFO:util:SPY: show service-profile QALI_SP_T_1_1
+2021-02-15 10:43:10,495 INFO:util:SPY: 
+2021-02-15 10:43:10,497 INFO:util:SPY: 
+2021-02-15 10:43:10,499 INFO:util:SPY: Service Profile:
+2021-02-15 10:43:10,501 INFO:util:SPY:     Service Profile Name Type              Server  Assignment Association
+2021-02-15 10:43:10,505 INFO:util:SPY:     -------------------- ----------------- ------- ---------- -----------
+2021-02-15 10:43:10,507 INFO:util:SPY:     QALI_SP_T_1_1        Initial Template          Unassigned Unassociated
+2021-02-15 10:43:10,509 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,517 INFO:util:SPY: top
+2021-02-15 10:43:10,525 INFO:util:SPY: 
+2021-02-15 10:43:10,528 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:10,530 INFO:util:SPY: scope org
+2021-02-15 10:43:10,533 INFO:util:SPY: 
+2021-02-15 10:43:10,535 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,544 INFO:util:SPY: show boot-policy QALI_BP_1_1
+2021-02-15 10:43:10,554 INFO:util:SPY: 
+2021-02-15 10:43:10,555 INFO:util:SPY: 
+2021-02-15 10:43:10,557 INFO:util:SPY: Boot Policy:
+2021-02-15 10:43:10,559 INFO:util:SPY:     Name                 Purpose     Reboot on Update Boot Mode
+2021-02-15 10:43:10,560 INFO:util:SPY:     -------------------- ----------- ---------------- ---------
+2021-02-15 10:43:10,560 INFO:util:SPY:     QALI_BP_1_1          Operational No               Legacy
+2021-02-15 10:43:10,560 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,561 INFO:cimcLib:set_boot_policy_to_service_profile()[line 10265] Add Boot Policy to Service Profile
+2021-02-15 10:43:10,564 INFO:util:SPY: top
+2021-02-15 10:43:10,567 INFO:util:SPY: 
+2021-02-15 10:43:10,570 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:10,573 INFO:util:SPY: scope org
+2021-02-15 10:43:10,637 INFO:util:SPY: 
+2021-02-15 10:43:10,640 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,648 INFO:util:SPY: scope service-profile QALI_SP_T_1_1
+2021-02-15 10:43:10,652 INFO:util:SPY: 
+2021-02-15 10:43:10,654 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile # 
+2021-02-15 10:43:10,661 INFO:util:SPY: set boot-policy QALI_BP_1_1
+2021-02-15 10:43:10,665 INFO:util:SPY: 
+2021-02-15 10:43:10,665 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile* # 
+2021-02-15 10:43:10,668 INFO:util:SPY: commit-buffer
+2021-02-15 10:43:10,682 INFO:util:SPY: 
+2021-02-15 10:43:10,684 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile # 
+2021-02-15 10:43:10,686 INFO:cimcLib:set_boot_policy_to_service_profile()[line 10275] Verify Boot Policy set to Service Profile
+2021-02-15 10:43:10,695 INFO:util:SPY: top
+2021-02-15 10:43:10,697 INFO:util:SPY: 
+2021-02-15 10:43:10,697 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:10,700 INFO:util:SPY: scope org
+2021-02-15 10:43:10,715 INFO:util:SPY: 
+2021-02-15 10:43:10,715 INFO:util:SPY: scope org
+2021-02-15 10:43:10,715 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,722 INFO:util:SPY: scope service-profile QALI_SP_T_1_1
+2021-02-15 10:43:10,722 INFO:util:SPY: 
+2021-02-15 10:43:10,722 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile # 
+2021-02-15 10:43:10,725 INFO:util:SPY: show boot-policy
+2021-02-15 10:43:10,756 INFO:util:SPY: 
+2021-02-15 10:43:10,760 INFO:util:SPY: 
+2021-02-15 10:43:10,764 INFO:util:SPY: Boot Policy:
+2021-02-15 10:43:10,766 INFO:util:SPY:     Name                 Purpose     Reboot on Update Boot Mode
+2021-02-15 10:43:10,770 INFO:util:SPY:     -------------------- ----------- ---------------- ---------
+2021-02-15 10:43:10,775 INFO:util:SPY:     QALI_BP_1_1          Operational No               Legacy
+2021-02-15 10:43:10,779 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile # 
+2021-02-15 10:43:10,792 INFO:cimcLib:set_boot_policy_to_service_profile()[line 10293] END [True]
+2021-02-15 10:43:10,794 INFO:cimcLib:create_service_profile_from_template()[line 9697] BEGIN: service_profile_template = QALI_SP_T_1_1, service_profile = QALI_SP_1_1
+2021-02-15 10:43:10,800 INFO:cimcLib:create_service_profile_from_template()[line 9705] Check that the Service Profile Template exists
+2021-02-15 10:43:10,807 INFO:util:SPY: top
+2021-02-15 10:43:10,812 INFO:util:SPY: 
+2021-02-15 10:43:10,815 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:10,826 INFO:util:SPY: scope org
+2021-02-15 10:43:10,828 INFO:util:SPY: 
+2021-02-15 10:43:10,829 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,837 INFO:util:SPY: show service-profile QALI_SP_T_1_1
+2021-02-15 10:43:10,868 INFO:util:SPY: 
+2021-02-15 10:43:10,868 INFO:util:SPY: 
+2021-02-15 10:43:10,868 INFO:util:SPY: Service Profile:
+2021-02-15 10:43:10,868 INFO:util:SPY:     Service Profile Name Type              Server  Assignment Association
+2021-02-15 10:43:10,868 INFO:util:SPY:     -------------------- ----------------- ------- ---------- -----------
+2021-02-15 10:43:10,868 INFO:util:SPY:     QALI_SP_T_1_1        Initial Template          Unassigned Unassociated
+2021-02-15 10:43:10,869 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,869 INFO:cimcLib:create_service_profile_from_template()[line 9721] Verify that the Service Profile does not exist
+2021-02-15 10:43:10,871 INFO:util:SPY: top
+2021-02-15 10:43:10,878 INFO:util:SPY: 
+2021-02-15 10:43:10,878 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:10,881 INFO:util:SPY: scope org
+2021-02-15 10:43:10,883 INFO:util:SPY: 
+2021-02-15 10:43:10,883 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,890 INFO:util:SPY: show service-profile QALI_SP_1_1
+2021-02-15 10:43:10,898 INFO:util:SPY: 
+2021-02-15 10:43:10,899 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,900 INFO:cimcLib:create_service_profile_from_template()[line 9738] Create Service Profile from Template
+2021-02-15 10:43:10,902 INFO:util:SPY: top
+2021-02-15 10:43:10,909 INFO:util:SPY: 
+2021-02-15 10:43:10,910 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:10,918 INFO:util:SPY: scope org
+2021-02-15 10:43:10,925 INFO:util:SPY: 
+2021-02-15 10:43:10,927 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:10,938 INFO:util:SPY: enter service-profile QALI_SP_1_1
+2021-02-15 10:43:10,942 INFO:util:SPY: 
+2021-02-15 10:43:10,942 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile* # 
+2021-02-15 10:43:10,954 INFO:util:SPY: set src-templ-name QALI_SP_T_1_1
+2021-02-15 10:43:10,956 INFO:util:SPY: 
+2021-02-15 10:43:10,959 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile* # 
+2021-02-15 10:43:10,962 INFO:util:SPY: commit-buffer
+2021-02-15 10:43:11,090 INFO:util:SPY: 
+2021-02-15 10:43:11,091 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile # 
+2021-02-15 10:43:11,092 INFO:cimcLib:create_service_profile_from_template()[line 9750] Verify that Service Profile was created
+2021-02-15 10:43:11,095 INFO:util:SPY: top
+2021-02-15 10:43:11,098 INFO:util:SPY: 
+2021-02-15 10:43:11,098 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:11,100 INFO:util:SPY: scope org
+2021-02-15 10:43:11,103 INFO:util:SPY: 
+2021-02-15 10:43:11,103 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:11,110 INFO:util:SPY: show service-profile QALI_SP_1_1
+2021-02-15 10:43:11,143 INFO:util:SPY: 
+2021-02-15 10:43:11,145 INFO:util:SPY: 
+2021-02-15 10:43:11,145 INFO:util:SPY: Service Profile:
+2021-02-15 10:43:11,148 INFO:util:SPY:     Service Profile Name Type              Server  Assignment Association
+2021-02-15 10:43:11,152 INFO:util:SPY:     -------------------- ----------------- ------- ---------- -----------
+2021-02-15 10:43:11,152 INFO:util:SPY:     QALI_SP_1_1          Instance                  Unassigned Unassociated
+2021-02-15 10:43:11,152 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:11,158 INFO:cimcLib:create_service_profile_from_template()[line 9769] END [True]
+2021-02-15 10:43:11,159 INFO:cimcLib:set_uuid_to_service_profile()[line 8507] BEGIN: service_profile = QALI_SP_1_1
+2021-02-15 10:43:11,163 INFO:cimcLib:set_uuid_to_service_profile()[line 8515] Check that the Service Profile exists
+2021-02-15 10:43:11,166 INFO:util:SPY: top
+2021-02-15 10:43:11,184 INFO:util:SPY: 
+2021-02-15 10:43:11,190 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:11,195 INFO:util:SPY: scope org
+2021-02-15 10:43:11,199 INFO:util:SPY: 
+2021-02-15 10:43:11,201 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:11,204 INFO:util:SPY: show service-profile QALI_SP_1_1
+2021-02-15 10:43:11,236 INFO:util:SPY: 
+2021-02-15 10:43:11,237 INFO:util:SPY: 
+2021-02-15 10:43:11,237 INFO:util:SPY: Service Profile:
+2021-02-15 10:43:11,237 INFO:util:SPY:     Service Profile Name Type              Server  Assignment Association
+2021-02-15 10:43:11,238 INFO:util:SPY:     -------------------- ----------------- ------- ---------- -----------
+2021-02-15 10:43:11,238 INFO:util:SPY:     QALI_SP_1_1          Instance                  Unassigned Unassociated
+2021-02-15 10:43:11,238 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:11,238 INFO:cimcLib:set_uuid_to_service_profile()[line 8531] construct UUID
+2021-02-15 10:43:11,238 INFO:cimcLib:format_date()[line 8469] BEGIN
+2021-02-15 10:43:11,238 INFO:cimcLib:format_date()[line 8491] END
+2021-02-15 10:43:11,238 INFO:cimcLib:format_date()[line 8469] BEGIN
+2021-02-15 10:43:11,238 INFO:cimcLib:format_date()[line 8491] END
+2021-02-15 10:43:11,239 INFO:cimcLib:format_date()[line 8469] BEGIN
+2021-02-15 10:43:11,239 INFO:cimcLib:format_date()[line 8491] END
+2021-02-15 10:43:11,239 INFO:cimcLib:format_date()[line 8469] BEGIN
+2021-02-15 10:43:11,239 INFO:cimcLib:format_date()[line 8491] END
+2021-02-15 10:43:11,239 INFO:cimcLib:format_date()[line 8469] BEGIN
+2021-02-15 10:43:11,239 INFO:cimcLib:format_date()[line 8491] END
+2021-02-15 10:43:11,239 INFO:cimcLib:set_uuid_to_service_profile()[line 8552] UUID constructed: 12345678-1111-2222-3333-210215104311
+2021-02-15 10:43:11,239 INFO:cimcLib:set_uuid_to_service_profile()[line 8556] Set UUID to Service Profile
+2021-02-15 10:43:11,242 INFO:util:SPY: scope org
+2021-02-15 10:43:11,244 INFO:util:SPY: 
+2021-02-15 10:43:11,248 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:11,280 INFO:util:SPY: scope service-profile QALI_SP_1_1
+2021-02-15 10:43:11,312 INFO:util:SPY: 
+2021-02-15 10:43:11,312 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile # 
+2021-02-15 10:43:11,315 INFO:util:SPY: set identity dynamic-uuid 12345678-1111-2222-3333-210215104311
+2021-02-15 10:43:11,318 INFO:util:SPY: 
+2021-02-15 10:43:11,319 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile* # 
+2021-02-15 10:43:11,322 INFO:util:SPY: commit-buffer
+2021-02-15 10:43:11,329 INFO:util:SPY: 
+2021-02-15 10:43:11,332 INFO:util:SPY: Error: Update failed: [address is already assigned to org-root/ls-QALI_SP_1_7]
+2021-02-15 10:43:11,334 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile* # 
+2021-02-15 10:43:11,349 ERROR:cimcLib:Error: <class 'qali.interface.interact.ErrorInOutput'>: Exception seen in output when command string '[31m[1mcommit-buffer
+(B[m' sent.
+cmdline: 
+ucs-reg-tb09-A /org/service-profile* #  [31m[1mcommit-buffer
+(B[m
+Actual error text:
+[31m[47m[5m[1m[7m[1m
+Error: Update failed: [address is already assigned to org-root/ls-QALI_SP_1_7](B[m(B[m
+Returned prompt: 
+ucs-reg-tb09-A /org/service-profile* # : None
+2021-02-15 10:43:11,350 INFO:cimcLib:set_uuid_to_service_profile()[line 8581] END
+2021-02-15 10:43:11,350 INFO:cimcLib:set_bios_policy_to_service_profile()[line 10321] BEGIN: service_profile = QALI_SP_1_1, bios_policy = QALI_BIOSSP_1_1, enable_sol = True, sol_policy = None
+2021-02-15 10:43:11,350 INFO:cimcLib:set_bios_policy_to_service_profile()[line 10333] Check that the Service Profile and BIOS Policy exists
+2021-02-15 10:43:11,353 INFO:util:SPY: top
+2021-02-15 10:43:11,359 INFO:util:SPY: 
+2021-02-15 10:43:11,359 INFO:util:SPY: ucs-reg-tb09-A* # 
+2021-02-15 10:43:11,362 INFO:util:SPY: scope org
+2021-02-15 10:43:11,364 INFO:util:SPY: 
+2021-02-15 10:43:11,365 INFO:util:SPY: ucs-reg-tb09-A /org* # 
+2021-02-15 10:43:11,367 INFO:util:SPY: show service-profile QALI_SP_1_1
+2021-02-15 10:43:11,398 INFO:util:SPY: 
+2021-02-15 10:43:11,399 INFO:util:SPY: 
+2021-02-15 10:43:11,399 INFO:util:SPY: Service Profile:
+2021-02-15 10:43:11,399 INFO:util:SPY:     Service Profile Name Type              Server  Assignment Association
+2021-02-15 10:43:11,399 INFO:util:SPY:     -------------------- ----------------- ------- ---------- -----------
+2021-02-15 10:43:11,399 INFO:util:SPY:     QALI_SP_1_1          Instance                  Unassigned Unassociated
+2021-02-15 10:43:11,399 INFO:util:SPY: ucs-reg-tb09-A /org* # 
+2021-02-15 10:43:11,402 INFO:util:SPY: top
+2021-02-15 10:43:11,409 INFO:util:SPY: 
+2021-02-15 10:43:11,411 INFO:util:SPY: ucs-reg-tb09-A* # 
+2021-02-15 10:43:11,417 INFO:util:SPY: scope org
+2021-02-15 10:43:11,418 INFO:util:SPY: 
+2021-02-15 10:43:11,419 INFO:util:SPY: ucs-reg-tb09-A /org* # 
+2021-02-15 10:43:11,421 INFO:util:SPY: show bios-policy QALI_BIOSSP_1_1
+2021-02-15 10:43:11,425 INFO:util:SPY: 
+2021-02-15 10:43:11,427 INFO:util:SPY: 
+2021-02-15 10:43:11,427 INFO:util:SPY: BIOS Policy:
+2021-02-15 10:43:11,427 INFO:util:SPY:     Name       Reboot on BIOS Policy Change
+2021-02-15 10:43:11,427 INFO:util:SPY:     ---------- ----------------------------
+2021-02-15 10:43:11,427 INFO:util:SPY:     QALI_BIOSSP_1_1
+2021-02-15 10:43:11,427 INFO:util:SPY:                No
+2021-02-15 10:43:11,427 INFO:util:SPY: ucs-reg-tb09-A /org* # 
+2021-02-15 10:43:11,428 INFO:cimcLib:set_bios_policy_to_service_profile()[line 10356] Add Bios Policy to Service Profile
+2021-02-15 10:43:11,430 INFO:util:SPY: top
+2021-02-15 10:43:11,434 INFO:util:SPY: 
+2021-02-15 10:43:11,434 INFO:util:SPY: ucs-reg-tb09-A* # 
+2021-02-15 10:43:11,437 INFO:util:SPY: scope org
+2021-02-15 10:43:11,439 INFO:util:SPY: 
+2021-02-15 10:43:11,439 INFO:util:SPY: ucs-reg-tb09-A /org* # 
+2021-02-15 10:43:11,446 INFO:util:SPY: scope service-profile QALI_SP_1_1
+2021-02-15 10:43:11,447 INFO:util:SPY: 
+2021-02-15 10:43:11,447 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile* # 
+2021-02-15 10:43:11,454 INFO:util:SPY: set bios-policy QALI_BIOSSP_1_1
+2021-02-15 10:43:11,455 INFO:util:SPY: 
+2021-02-15 10:43:11,455 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile* # 
+2021-02-15 10:43:11,459 INFO:util:SPY: commit-buffer
+2021-02-15 10:43:11,466 INFO:util:SPY: 
+2021-02-15 10:43:11,466 INFO:util:SPY: Error: Update failed: [address is already assigned to org-root/ls-QALI_SP_1_7]
+2021-02-15 10:43:11,466 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile* # 
+2021-02-15 10:43:11,467 ERROR:cimcLib:Error: <class 'qali.interface.interact.ErrorInOutput'>: Exception seen in output when command string '[31m[1mcommit-buffer
+(B[m' sent.
+cmdline: 
+ucs-reg-tb09-A /org/service-profile* #  [31m[1mcommit-buffer
+(B[m
+Actual error text:
+[31m[47m[5m[1m[7m[1m
+Error: Update failed: [address is already assigned to org-root/ls-QALI_SP_1_7](B[m(B[m
+Returned prompt: 
+ucs-reg-tb09-A /org/service-profile* # : None
+2021-02-15 10:43:11,467 INFO:cimcLib:set_bios_policy_to_service_profile()[line 10410] END [False]
+2021-02-15 10:43:11,468 INFO:cimcLib:set_host_fw_pack_to_service_profile()[line 10430] BEGIN: service_profile = QALI_SP_1_1, host_fw_pack = QALI_HFP_1_1
+2021-02-15 10:43:11,468 INFO:cimcLib:set_host_fw_pack_to_service_profile()[line 10438] Check that the Service Profile and Host Firmware Packages exists
+2021-02-15 10:43:11,472 INFO:util:SPY: up;up;
+2021-02-15 10:43:11,480 INFO:util:SPY: 
+2021-02-15 10:43:11,480 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:11,484 INFO:util:SPY: show service-profile
+2021-02-15 10:43:12,315 INFO:util:SPY: 
+2021-02-15 10:43:12,317 INFO:util:SPY: 
+2021-02-15 10:43:12,318 INFO:util:SPY: Service Profile:
+2021-02-15 10:43:12,318 INFO:util:SPY:     Service Profile Name Type              Server  Assignment Association
+2021-02-15 10:43:12,318 INFO:util:SPY:     -------------------- ----------------- ------- ---------- -----------
+2021-02-15 10:43:12,318 INFO:util:SPY:     QALI_SP_1_1          Instance                  Unassigned Unassociated
+2021-02-15 10:43:12,318 INFO:util:SPY:     QALI_SP_1_2          Instance          1/2     Assigned   Associated
+2021-02-15 10:43:12,318 INFO:util:SPY:     QALI_SP_1_3          Instance          1/3     Assigned   Associating
+2021-02-15 10:43:12,319 INFO:util:SPY:     QALI_SP_1_5          Instance          1/5     Assigned   Associated
+2021-02-15 10:43:12,319 INFO:util:SPY:     QALI_SP_1_7          Instance                  Unassigned Unassociated
+2021-02-15 10:43:12,319 INFO:util:SPY:     QALI_SP_T_1_1        Initial Template          Unassigned Unassociated
+2021-02-15 10:43:12,319 INFO:util:SPY:     QALI_SP_T_1_2        Initial Template          Unassigned Unassociated
+2021-02-15 10:43:12,319 INFO:util:SPY:     QALI_SP_T_1_3        Initial Template          Unassigned Unassociated
+2021-02-15 10:43:12,319 INFO:util:SPY:     QALI_SP_T_1_5        Initial Template          Unassigned Unassociated
+2021-02-15 10:43:12,319 INFO:util:SPY:     QALI_SP_T_1_7        Initial Template          Unassigned Unassociated
+2021-02-15 10:43:12,320 INFO:util:SPY:     SP_1_1               Instance                  Unassigned Unassociated
+2021-02-15 10:43:12,320 INFO:util:SPY:     sp_1_2               Instance                  Unassigned Unassociated
+2021-02-15 10:43:12,320 INFO:util:SPY:     sp_1_3               Instance                  Unassigned Unassociated
+2021-02-15 10:43:12,320 INFO:util:SPY:     sp_1_5               Instance                  Unassigned Unassociated
+2021-02-15 10:43:12,320 INFO:util:SPY:     sp_1_7               Instance                  Unassigned Unassociated
+2021-02-15 10:43:12,320 INFO:util:SPY:     sp_template          Updating Template         Unassigned Unassociated
+2021-02-15 10:43:12,320 INFO:util:SPY: ucs-reg-tb09-A /org # 
+2021-02-15 10:43:12,344 INFO:cimcLib:set_host_fw_pack_to_service_profile()[line 10451] Add HFP to the Service Profile
+2021-02-15 10:43:12,348 INFO:util:SPY: scope service-profile  QALI_SP_1_1
+2021-02-15 10:43:12,363 INFO:util:SPY: 
+2021-02-15 10:43:12,363 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile # 
+2021-02-15 10:43:12,366 INFO:util:SPY: set host-fw-policy QALI_HFP_1_1
+2021-02-15 10:43:12,397 INFO:util:SPY: 
+2021-02-15 10:43:12,397 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile* # 
+2021-02-15 10:43:12,401 INFO:util:SPY: commit-buffer
+2021-02-15 10:43:12,528 INFO:util:SPY: 
+2021-02-15 10:43:12,528 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile # 
+2021-02-15 10:43:12,529 INFO:cimcLib:set_host_fw_pack_to_service_profile()[line 10464] END [True]
+2021-02-15 10:43:12,529 WARNING:cimcLib:quick_provision()[line 8175] Error in creating Service Profile
+2021-02-15 10:43:12,529 INFO:cimcLib:associate()[line 8311] BEGIN: chassis_number = 1, blade_number = 1, service_profile = QALI_SP_1_1
+2021-02-15 10:43:12,529 INFO:cimcLib:associate()[line 8329] Check that the Service Profile exists
+2021-02-15 10:43:12,532 INFO:util:SPY: top
+2021-02-15 10:43:12,535 INFO:util:SPY: 
+2021-02-15 10:43:12,535 INFO:util:SPY: ucs-reg-tb09-A* # 
+2021-02-15 10:43:12,538 INFO:util:SPY: scope org
+2021-02-15 10:43:12,553 INFO:util:SPY: 
+2021-02-15 10:43:12,553 INFO:util:SPY: ucs-reg-tb09-A /org* # 
+2021-02-15 10:43:12,556 INFO:util:SPY: show service-profile QALI_SP_1_1
+2021-02-15 10:43:12,884 INFO:util:SPY: 
+2021-02-15 10:43:12,884 INFO:util:SPY: 
+2021-02-15 10:43:12,884 INFO:util:SPY: Service Profile:
+2021-02-15 10:43:12,884 INFO:util:SPY:     Service Profile Name Type              Server  Assignment Association
+2021-02-15 10:43:12,884 INFO:util:SPY:     -------------------- ----------------- ------- ---------- -----------
+2021-02-15 10:43:12,885 INFO:util:SPY:     QALI_SP_1_1          Instance                  Unassigned Unassociated
+2021-02-15 10:43:12,885 INFO:util:SPY: ucs-reg-tb09-A /org* # 
+2021-02-15 10:43:12,885 INFO:cimcLib:associate()[line 8345] Associate service profile: QALI_SP_1_1
+2021-02-15 10:43:12,888 INFO:util:SPY: top
+2021-02-15 10:43:12,895 INFO:util:SPY: 
+2021-02-15 10:43:12,895 INFO:util:SPY: ucs-reg-tb09-A* # 
+2021-02-15 10:43:12,898 INFO:util:SPY: scope org
+2021-02-15 10:43:12,905 INFO:util:SPY: 
+2021-02-15 10:43:12,905 INFO:util:SPY: ucs-reg-tb09-A /org* # 
+2021-02-15 10:43:12,912 INFO:util:SPY: scope service-profile QALI_SP_1_1
+2021-02-15 10:43:12,915 INFO:util:SPY: 
+2021-02-15 10:43:12,915 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile* # 
+2021-02-15 10:43:12,918 INFO:util:SPY: associate server 1/1
+2021-02-15 10:43:12,949 INFO:util:SPY: 
+2021-02-15 10:43:12,949 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile* # 
+2021-02-15 10:43:12,952 INFO:util:SPY: commit-buffer
+2021-02-15 10:43:12,960 INFO:util:SPY: 
+2021-02-15 10:43:12,960 INFO:util:SPY: Error: Update failed: [address is already assigned to org-root/ls-QALI_SP_1_7]
+2021-02-15 10:43:12,960 INFO:util:SPY: ucs-reg-tb09-A /org/service-profile* # 
+2021-02-15 10:43:12,960 ERROR:cimcLib:Error: <class 'qali.interface.interact.ErrorInOutput'>: Exception seen in output when command string '[31m[1mcommit-buffer
+(B[m' sent.
+cmdline: 
+ucs-reg-tb09-A /org/service-profile* #  [31m[1mcommit-buffer
+(B[m
+Actual error text:
+[31m[47m[5m[1m[7m[1m
+Error: Update failed: [address is already assigned to org-root/ls-QALI_SP_1_7](B[m(B[m
+Returned prompt: 
+ucs-reg-tb09-A /org/service-profile* # : None
+2021-02-15 10:43:12,960 INFO:cimcLib:associate()[line 8399] END
+2021-02-15 10:43:12,961 ERROR:cimcLib:Error: <type 'exceptions.Exception'>: quick_provision() failed to associate a new profile to blade 1/1: None
+2021-02-15 10:43:12,961 INFO:cimcLib:quick_provision()[line 8211] END [False]
+2021-02-15 10:43:12,968 INFO:util:SPY: top
+2021-02-15 10:43:12,968 INFO:util:SPY: 
+2021-02-15 10:43:12,969 INFO:util:SPY: ucs-reg-tb09-A# 
+2021-02-15 10:43:12,971 INFO:util:SPY: scope chassis  1
+2021-02-15 10:43:12,986 INFO:util:SPY: 
+2021-02-15 10:43:12,986 INFO:util:SPY: ucs-reg-tb09-A /chassis # 
+2021-02-15 10:43:12,989 INFO:util:SPY: scope server  1
+2021-02-15 10:43:12,992 INFO:util:SPY: 
+2021-02-15 10:43:12,992 INFO:util:SPY: ucs-reg-tb09-A /chassis/server # 
+2021-02-15 10:43:12,995 INFO:util:SPY: show detail
+2021-02-15 10:43:13,123 INFO:util:SPY: 
+2021-02-15 10:43:13,123 INFO:util:SPY: 
+2021-02-15 10:43:13,123 INFO:util:SPY: Server:
+2021-02-15 10:43:13,123 INFO:util:SPY:     Slot: 1
+2021-02-15 10:43:13,123 INFO:util:SPY:     Name:
+2021-02-15 10:43:13,123 INFO:util:SPY:     User Label:
+2021-02-15 10:43:13,124 INFO:util:SPY:     Overall Status: Config
+2021-02-15 10:43:13,124 INFO:util:SPY:     Oper Qualifier: N/A
+2021-02-15 10:43:13,124 INFO:util:SPY:     Service Profile:
+2021-02-15 10:43:13,124 INFO:util:SPY:     Asset Tag:
+2021-02-15 10:43:13,124 INFO:util:SPY:     Association: Removing
+2021-02-15 10:43:13,124 INFO:util:SPY:     Availability: Unavailable
+2021-02-15 10:43:13,124 INFO:util:SPY:     Discovery: Complete
+2021-02-15 10:43:13,125 INFO:util:SPY:     Conn Path: A,B
+2021-02-15 10:43:13,125 INFO:util:SPY:     Conn Status: A,B
+2021-02-15 10:43:13,125 INFO:util:SPY:     Managing Instance: B
+2021-02-15 10:43:13,125 INFO:util:SPY:     Admin Power: Policy
+2021-02-15 10:43:13,125 INFO:util:SPY:     Oper Power: On
+2021-02-15 10:43:13,125 INFO:util:SPY:     Admin State: In Service
+2021-02-15 10:43:13,125 INFO:util:SPY:     Product Name: Cisco UCS B200 M4
+2021-02-15 10:43:13,126 INFO:util:SPY:     PID: UCSB-B200-M4
+2021-02-15 10:43:13,126 INFO:util:SPY:     VID: V01
+2021-02-15 10:43:13,126 INFO:util:SPY:     Vendor: Cisco Systems Inc
+2021-02-15 10:43:13,126 INFO:util:SPY:     Serial (SN): FCH2012J3KQ
+2021-02-15 10:43:13,126 INFO:util:SPY:     HW Revision: 0
+2021-02-15 10:43:13,126 INFO:util:SPY:     Mfg Date: 2016-03-27T00:00:00.000
+2021-02-15 10:43:13,126 INFO:util:SPY:     Part Number: 73-15862-03
+2021-02-15 10:43:13,127 INFO:util:SPY:     SKU: UCSB-B200-M4
+2021-02-15 10:43:13,127 INFO:util:SPY:     Memory (MB): 32768
+2021-02-15 10:43:13,127 INFO:util:SPY:     Effective Memory (MB): 32768
+2021-02-15 10:43:13,127 INFO:util:SPY:     Operating Memory Speed (MHz): 1600
+2021-02-15 10:43:13,127 INFO:util:SPY:     Operating Memory Voltage: Regular Voltage
+2021-02-15 10:43:13,127 INFO:util:SPY:     Cores: 12
+2021-02-15 10:43:13,127 INFO:util:SPY:     Num Of Cores Enabled: 12
+2021-02-15 10:43:13,128 INFO:util:SPY:     Adapters: 2
+2021-02-15 10:43:13,128 INFO:util:SPY:     Eth Host Interfaces: 0
+2021-02-15 10:43:13,128 INFO:util:SPY:     FC Host Interfaces: 0
+2021-02-15 10:43:13,128 INFO:util:SPY:     Burned-In UUID: 1561bf40-44d4-44f4-bf46-590c9fa397a8
+2021-02-15 10:43:13,128 INFO:util:SPY:     Dynamic UUID: 1561bf40-44d4-44f4-bf46-590c9fa397a8
+2021-02-15 10:43:13,128 INFO:util:SPY:     Current Task 1: Waiting for BIOS POST completion from CIMC on server 1/1(FSM-STAGE:sam:dme:ComputePhysicalDisassociate:BiosPostCompletion)
+2021-02-15 10:43:13,128 INFO:util:SPY:     Current Task 2:
+2021-02-15 10:43:13,129 INFO:util:SPY:     Current Task 3:
+2021-02-15 10:43:13,129 INFO:util:SPY: ucs-reg-tb09-A /chassis/server # 
+2021-02-15 10:43:13,130 INFO:cimcLib:Blade is not associated.
+2021-02-15 10:43:13,562 DEBUG:cimcLib:BMC_RT_Enter: file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: exit_fail() line: 1258 msg : 'Enter routine' params: {'msg': 'Blade is not associated in the end of test.', 'self': <teams.cimc.library.cimcLib.bmcRoutine instance at 0x7f0d1c40d998>, 'stop_all_tests': False, 'value': -1}
+2021-02-15 10:43:13,562 DEBUG:cimcLib:BMC_RT_Enter_date: 2021-02-15 10:43:13.562727
+2021-02-15 10:43:13,562 DEBUG:cimcLib:BMC_RT_Enter: file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check() line: 2362 msg : 'Enter routine' params: {'self': <teams.cimc.library.cimcLib.bmcRoutine instance at 0x7f0d1c40d998>, 'kwargs': {'only_Checking': 'check_faults', 'fromexitfail': True, 'take_Tech_Support': False}}
+2021-02-15 10:43:13,563 DEBUG:cimcLib:BMC_RT_Enter_date: 2021-02-15 10:43:13.563043
+2021-02-15 10:43:13,563 INFO:cimcLib:check() kwargs = {'only_Checking': 'check_faults', 'fromexitfail': True, 'take_Tech_Support': False}
+2021-02-15 10:43:13,563 DEBUG:cimcLib:BMC_RT_Step: 0.2.1 file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check() line: 2376 msg : 'Call the correct check methods:'
+2021-02-15 10:43:13,563 DEBUG:cimcLib:BMC_RT_Step: 0.2.2 file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check() line: 2422 msg : 'Now, decide the one-time check list basing on the arguments inputed.'
+2021-02-15 10:43:13,563 INFO:cimcLib:Parsing the arguments for user define checking test.
+2021-02-15 10:43:13,563 DEBUG:cimcLib:BMC_RT_Step: 0.2.3 file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check() line: 2427 msg : 'Check points specified in skip_checking will be skipped'
+2021-02-15 10:43:13,563 DEBUG:cimcLib:BMC_RT_Step: 0.2.4 file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check() line: 2437 msg : 'Append check points'
+2021-02-15 10:43:13,563 INFO:cimcLib:The check points to be covered are:
+check_faults
+2021-02-15 10:43:13,564 DEBUG:cimcLib:BMC_RT_Step: 0.2.5 file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check() line: 2454 msg : 'Now, run the checking one by one.'
+2021-02-15 10:43:13,564 DEBUG:cimcLib:calling check_list[check_faults]=<functools.partial object at 0x7f0d0eca9c58>
+2021-02-15 10:43:13,564 DEBUG:cimcLib:BMC_RT_Enter: file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check_faults() line: 1395 msg : 'Enter routine' params: {'self': <teams.cimc.library.cimcLib.bmcRoutine instance at 0x7f0d1c40d998>, 'kwargs': {'only_Checking': 'check_faults', 'fromexitfail': True, 'take_Tech_Support': False}}
+2021-02-15 10:43:13,564 DEBUG:cimcLib:BMC_RT_Enter_date: 2021-02-15 10:43:13.564499
+2021-02-15 10:43:13,564 INFO:cimcLib:check_faults() kwargs = {'only_Checking': 'check_faults', 'fromexitfail': True, 'take_Tech_Support': False}
+2021-02-15 10:43:13,564 DEBUG:cimcLib:BMC_RT_Step: 0.3.1 file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check_faults() line: 1408 msg : 'Check for faults'
+2021-02-15 10:43:13,564 DEBUG:cimcLib:UCS_CLI_date: 2021-02-15 10:43:13.564883
+2021-02-15 10:43:13,567 INFO:util:SPY: top
+2021-02-15 10:43:13,573 INFO:util:SPY: 
+2021-02-15 10:43:13,574 INFO:util:SPY: ucs-reg-tb09-A* # 
+2021-02-15 10:43:13,574 DEBUG:cimcLib:UCS_CLI_cmd: top
+2021-02-15 10:43:13,574 DEBUG:cimcLib:UCS_CLI_out: 
+2021-02-15 10:43:13,574 DEBUG:cimcLib:UCS_CLI_date: 2021-02-15 10:43:13.574511 cmd duration = 0.00962686538696
+2021-02-15 10:43:13,574 DEBUG:cimcLib:UCS_CLI_date: 2021-02-15 10:43:13.574635
+2021-02-15 10:43:13,581 INFO:util:SPY: scope server 1/1
+2021-02-15 10:43:13,588 INFO:util:SPY: 
+2021-02-15 10:43:13,588 INFO:util:SPY: ucs-reg-tb09-A /chassis/server* # 
+2021-02-15 10:43:13,589 DEBUG:cimcLib:UCS_CLI_cmd: scope server 1/1
+2021-02-15 10:43:13,589 DEBUG:cimcLib:UCS_CLI_out: 
+2021-02-15 10:43:13,589 DEBUG:cimcLib:UCS_CLI_date: 2021-02-15 10:43:13.589712 cmd duration = 0.0150761604309
+2021-02-15 10:43:13,589 DEBUG:cimcLib:UCS_CLI_date: 2021-02-15 10:43:13.589932
+2021-02-15 10:43:13,605 INFO:util:SPY: show fault
+2021-02-15 10:43:13,933 INFO:util:SPY: 
+2021-02-15 10:43:13,933 INFO:util:SPY: Severity  Code     Last Transition Time     ID       Description
+2021-02-15 10:43:13,934 INFO:util:SPY: --------- -------- ------------------------ -------- -----------
+2021-02-15 10:43:13,934 INFO:util:SPY: Warning   F78414   2021-02-15T10:43:07.878   3931165 [FSM:STAGE:REMOTE-ERROR]: Result: end-point-unavailable Code: unspecified Message: Waiting for BIOS POST Completion information from IBMC(sam:dme:ComputePhysicalDisassociate:BiosPostCompletion)
+2021-02-15 10:43:13,934 INFO:util:SPY: Major     F0283    2021-02-15T10:42:21.933   3924760  VIF 2914 on server 1 / 1 of switch B  down, reason: Module removed
+2021-02-15 10:43:13,935 INFO:util:SPY: Major     F0283    2021-02-15T10:42:21.933   3924759  VIF 2915 on server 1 / 1 of switch B  down, reason: Module removed
+2021-02-15 10:43:13,935 INFO:util:SPY: Major     F0283    2021-02-15T10:42:21.630   3924736  VIF 2912 on server 1 / 1 of switch A  down, reason: Module removed
+2021-02-15 10:43:13,935 INFO:util:SPY: Major     F0283    2021-02-15T10:42:21.630   3924735  VIF 2913 on server 1 / 1 of switch A  down, reason: Module removed
+2021-02-15 10:43:13,935 INFO:util:SPY: Cleared   F16973   2021-02-15T10:36:00.309   3924657 [FSM:STAGE:RETRY:]: Perform oob storage inventory with server profile org-root/ls-SP_1_1(FSM-STAGE:sam:dme:ComputePhysicalAssociate:OobStorageInventory)
+2021-02-15 10:43:13,936 INFO:util:SPY: Cleared   F78413   2021-02-15T10:35:50.586   3925313 [FSM:STAGE:REMOTE-ERROR]: Result: timeout Code: unspecified Message: Waiting for storage subsystem to initialize(sam:dme:ComputePhysicalAssociate:OobStorageInventory)
+2021-02-15 10:43:13,936 INFO:util:SPY: Cleared   F16520   2021-02-15T10:25:20.337   3921387 [FSM:STAGE:RETRY:]: Waiting for valid power profile for server 1/1 from CIMC(FSM-STAGE:sam:dme:ComputeBladeDiscover:SendBmcProfilingDone)
+2021-02-15 10:43:13,936 INFO:util:SPY: Cleared   F77960   2021-02-15T10:25:20.337   3922299 [FSM:STAGE:REMOTE-ERROR]: Result: end-point-unavailable Code: ERR-POWER-PROFILE-IN-PROGRESS Message: Waiting for valid Power Profile from CIMC(sam:dme:ComputeBladeDiscover:SendBmcProfilingDone)
+2021-02-15 10:43:13,936 INFO:util:SPY: Cleared   F0206    2021-02-15T10:13:14.052   3921590 Adapter 1/1/1 is unreachable
+2021-02-15 10:43:13,937 INFO:util:SPY: Cleared   F0206    2021-02-15T10:13:14.002   3921589 Adapter 1/1/2 is unreachable
+2021-02-15 10:43:13,937 INFO:util:SPY: Cleared   F0156    2021-02-15T10:11:41.751   3880118 Server, vendor(Cisco Systems Inc), model(UCSB-B200-M4), serial(FCH2012J3KQ) in slot 1/1 presence: mismatch
+2021-02-15 10:43:13,937 INFO:util:SPY: ucs-reg-tb09-A /chassis/server* # 
+2021-02-15 10:43:13,939 DEBUG:cimcLib:UCS_CLI_cmd: show fault
+2021-02-15 10:43:13,939 DEBUG:cimcLib:UCS_CLI_out: 
+2021-02-15 10:43:13,940 DEBUG:cimcLib:UCS_CLI_out: Severity  Code     Last Transition Time     ID       Description
+2021-02-15 10:43:13,940 DEBUG:cimcLib:UCS_CLI_out: --------- -------- ------------------------ -------- -----------
+2021-02-15 10:43:13,940 DEBUG:cimcLib:UCS_CLI_out: Warning   F78414   2021-02-15T10:43:07.878   3931165 [FSM:STAGE:REMOTE-ERROR]: Result: end-point-unavailable Code: unspecified Message: Waiting for BIOS POST Completion information from IBMC(sam:dme:ComputePhysicalDisassociate:BiosPostCompletion)
+2021-02-15 10:43:13,940 DEBUG:cimcLib:UCS_CLI_out: Major     F0283    2021-02-15T10:42:21.933   3924760  VIF 2914 on server 1 / 1 of switch B  down, reason: Module removed
+2021-02-15 10:43:13,940 DEBUG:cimcLib:UCS_CLI_out: Major     F0283    2021-02-15T10:42:21.933   3924759  VIF 2915 on server 1 / 1 of switch B  down, reason: Module removed
+2021-02-15 10:43:13,941 DEBUG:cimcLib:UCS_CLI_out: Major     F0283    2021-02-15T10:42:21.630   3924736  VIF 2912 on server 1 / 1 of switch A  down, reason: Module removed
+2021-02-15 10:43:13,941 DEBUG:cimcLib:UCS_CLI_out: Major     F0283    2021-02-15T10:42:21.630   3924735  VIF 2913 on server 1 / 1 of switch A  down, reason: Module removed
+2021-02-15 10:43:13,941 DEBUG:cimcLib:UCS_CLI_out: Cleared   F16973   2021-02-15T10:36:00.309   3924657 [FSM:STAGE:RETRY:]: Perform oob storage inventory with server profile org-root/ls-SP_1_1(FSM-STAGE:sam:dme:ComputePhysicalAssociate:OobStorageInventory)
+2021-02-15 10:43:13,941 DEBUG:cimcLib:UCS_CLI_out: Cleared   F78413   2021-02-15T10:35:50.586   3925313 [FSM:STAGE:REMOTE-ERROR]: Result: timeout Code: unspecified Message: Waiting for storage subsystem to initialize(sam:dme:ComputePhysicalAssociate:OobStorageInventory)
+2021-02-15 10:43:13,941 DEBUG:cimcLib:UCS_CLI_out: Cleared   F16520   2021-02-15T10:25:20.337   3921387 [FSM:STAGE:RETRY:]: Waiting for valid power profile for server 1/1 from CIMC(FSM-STAGE:sam:dme:ComputeBladeDiscover:SendBmcProfilingDone)
+2021-02-15 10:43:13,941 DEBUG:cimcLib:UCS_CLI_out: Cleared   F77960   2021-02-15T10:25:20.337   3922299 [FSM:STAGE:REMOTE-ERROR]: Result: end-point-unavailable Code: ERR-POWER-PROFILE-IN-PROGRESS Message: Waiting for valid Power Profile from CIMC(sam:dme:ComputeBladeDiscover:SendBmcProfilingDone)
+2021-02-15 10:43:13,942 DEBUG:cimcLib:UCS_CLI_out: Cleared   F0206    2021-02-15T10:13:14.052   3921590 Adapter 1/1/1 is unreachable
+2021-02-15 10:43:13,942 DEBUG:cimcLib:UCS_CLI_out: Cleared   F0206    2021-02-15T10:13:14.002   3921589 Adapter 1/1/2 is unreachable
+2021-02-15 10:43:13,942 DEBUG:cimcLib:UCS_CLI_out: Cleared   F0156    2021-02-15T10:11:41.751   3880118 Server, vendor(Cisco Systems Inc), model(UCSB-B200-M4), serial(FCH2012J3KQ) in slot 1/1 presence: mismatch
+2021-02-15 10:43:13,942 DEBUG:cimcLib:UCS_CLI_date: 2021-02-15 10:43:13.942701 cmd duration = 0.352764844894
+2021-02-15 10:43:13,943 DEBUG:cimcLib:BMC_RT_Step: 0.3.2 file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check_faults() line: 1416 msg : 'Fail the test on any Critical faults - unless fault is in skip list'
+2021-02-15 10:43:13,948 INFO:cimcLib:Skip Faults returning True
+2021-02-15 10:43:13,948 INFO:cimcLib:Critical Fault does not affect test
+2021-02-15 10:43:13,948 INFO:cimcLib:
+Severity  Code     Last Transition Time     ID       Description
+--------- -------- ------------------------ -------- -----------
+Warning   F78414   2021-02-15T10:43:07.878   3931165 [FSM:STAGE:REMOTE-ERROR]: Result: end-point-unavailable Code: unspecified Message: Waiting for BIOS POST Completion information from IBMC(sam:dme:ComputePhysicalDisassociate:BiosPostCompletion)
+Major     F0283    2021-02-15T10:42:21.933   3924760  VIF 2914 on server 1 / 1 of switch B  down, reason: Module removed
+Major     F0283    2021-02-15T10:42:21.933   3924759  VIF 2915 on server 1 / 1 of switch B  down, reason: Module removed
+Major     F0283    2021-02-15T10:42:21.630   3924736  VIF 2912 on server 1 / 1 of switch A  down, reason: Module removed
+Major     F0283    2021-02-15T10:42:21.630   3924735  VIF 2913 on server 1 / 1 of switch A  down, reason: Module removed
+Cleared   F16973   2021-02-15T10:36:00.309   3924657 [FSM:STAGE:RETRY:]: Perform oob storage inventory with server profile org-root/ls-SP_1_1(FSM-STAGE:sam:dme:ComputePhysicalAssociate:OobStorageInventory)
+Cleared   F78413   2021-02-15T10:35:50.586   3925313 [FSM:STAGE:REMOTE-ERROR]: Result: timeout Code: unspecified Message: Waiting for storage subsystem to initialize(sam:dme:ComputePhysicalAssociate:OobStorageInventory)
+Cleared   F16520   2021-02-15T10:25:20.337   3921387 [FSM:STAGE:RETRY:]: Waiting for valid power profile for server 1/1 from CIMC(FSM-STAGE:sam:dme:ComputeBladeDiscover:SendBmcProfilingDone)
+Cleared   F77960   2021-02-15T10:25:20.337   3922299 [FSM:STAGE:REMOTE-ERROR]: Result: end-point-unavailable Code: ERR-POWER-PROFILE-IN-PROGRESS Message: Waiting for valid Power Profile from CIMC(sam:dme:ComputeBladeDiscover:SendBmcProfilingDone)
+Cleared   F0206    2021-02-15T10:13:14.052   3921590 Adapter 1/1/1 is unreachable
+Cleared   F0206    2021-02-15T10:13:14.002   3921589 Adapter 1/1/2 is unreachable
+Cleared   F0156    2021-02-15T10:11:41.751   3880118 Server, vendor(Cisco Systems Inc), model(UCSB-B200-M4), serial(FCH2012J3KQ) in slot 1/1 presence: mismatch
+2021-02-15 10:43:13,949 DEBUG:cimcLib:BMC_RT_Exit: file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check_faults() line: 1433 step: 0 returns: 0 msg : 'Done with check_faults()' routine duration: 0.384677886963
+2021-02-15 10:43:13,949 DEBUG:cimcLib:BMC_RT_Exit_date: 2021-02-15 10:43:13.949176
+2021-02-15 10:43:13,949 INFO:cimcLib:Check has completed, no bad sel events, alarms, or blade faults
+2021-02-15 10:43:13,949 DEBUG:cimcLib:BMC_RT_Exit: file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check() line: 2460 step: 0 returns: 0 msg : 'Done with check()' routine duration: 0.38653588295
+2021-02-15 10:43:13,949 DEBUG:cimcLib:BMC_RT_Exit_date: 2021-02-15 10:43:13.949539
+2021-02-15 10:43:13,949 DEBUG:cimcLib:Last exception: exctype=None
+ excvalue=None
+ exctrace=
+2021-02-15 10:43:13,949 DEBUG:cimcLib:BMC_RT_Exit: file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: exit_fail() line: 1265 step: 0 returns: -1 msg : 'Blade is not associated in the end of test.' routine duration: 0.818941116333
+2021-02-15 10:43:13,949 DEBUG:cimcLib:BMC_RT_Exit: Stack:
+2021-02-15 10:43:14,118 DEBUG:cimcLib:     [2] file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: exit_fail line: 1265
+2021-02-15 10:43:14,130 DEBUG:cimcLib:     [1] file: /auto/savbu-india/automation/qali_sudo/qali/testss//teams/regression/CIMC/scripts/provision/provision.py routine: run_test line: 82
+2021-02-15 10:43:14,130 DEBUG:cimcLib:BMC_RT_Exit_date: 2021-02-15 10:43:14.130817
+2021-02-15 10:43:14,130 DEBUG:cimcLib:BMC_Exit_Fail: value=-1 msg=Blade is not associated in the end of test.
+2021-02-15 10:43:14,131 DEBUG:cimcLib:BMC_RT_Enter: file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: exit_fail() line: 1258 msg : 'Enter routine' params: {'msg': 'Except TestFail, Blade is not associated in the end of test.', 'self': <teams.cimc.library.cimcLib.bmcRoutine instance at 0x7f0d1c40d998>, 'stop_all_tests': False, 'value': -2}
+2021-02-15 10:43:14,131 DEBUG:cimcLib:BMC_RT_Enter_date: 2021-02-15 10:43:14.131224
+2021-02-15 10:43:14,131 DEBUG:cimcLib:BMC_RT_Enter: file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check() line: 2362 msg : 'Enter routine' params: {'self': <teams.cimc.library.cimcLib.bmcRoutine instance at 0x7f0d1c40d998>, 'kwargs': {'only_Checking': 'check_faults', 'fromexitfail': True, 'take_Tech_Support': False}}
+2021-02-15 10:43:14,131 DEBUG:cimcLib:BMC_RT_Enter_date: 2021-02-15 10:43:14.131510
+2021-02-15 10:43:14,131 INFO:cimcLib:check() kwargs = {'only_Checking': 'check_faults', 'fromexitfail': True, 'take_Tech_Support': False}
+2021-02-15 10:43:14,131 DEBUG:cimcLib:BMC_RT_Step: 0.2.1 file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check() line: 2376 msg : 'Call the correct check methods:'
+2021-02-15 10:43:14,131 DEBUG:cimcLib:BMC_RT_Step: 0.2.2 file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check() line: 2422 msg : 'Now, decide the one-time check list basing on the arguments inputed.'
+2021-02-15 10:43:14,132 INFO:cimcLib:Parsing the arguments for user define checking test.
+2021-02-15 10:43:14,132 DEBUG:cimcLib:BMC_RT_Step: 0.2.3 file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check() line: 2427 msg : 'Check points specified in skip_checking will be skipped'
+2021-02-15 10:43:14,132 DEBUG:cimcLib:BMC_RT_Step: 0.2.4 file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check() line: 2437 msg : 'Append check points'
+2021-02-15 10:43:14,132 INFO:cimcLib:The check points to be covered are:
+check_faults
+2021-02-15 10:43:14,132 DEBUG:cimcLib:BMC_RT_Step: 0.2.5 file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check() line: 2454 msg : 'Now, run the checking one by one.'
+2021-02-15 10:43:14,132 DEBUG:cimcLib:calling check_list[check_faults]=<functools.partial object at 0x7f0d0eca9db8>
+2021-02-15 10:43:14,132 DEBUG:cimcLib:BMC_RT_Enter: file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check_faults() line: 1395 msg : 'Enter routine' params: {'self': <teams.cimc.library.cimcLib.bmcRoutine instance at 0x7f0d1c40d998>, 'kwargs': {'only_Checking': 'check_faults', 'fromexitfail': True, 'take_Tech_Support': False}}
+2021-02-15 10:43:14,133 DEBUG:cimcLib:BMC_RT_Enter_date: 2021-02-15 10:43:14.132995
+2021-02-15 10:43:14,133 INFO:cimcLib:check_faults() kwargs = {'only_Checking': 'check_faults', 'fromexitfail': True, 'take_Tech_Support': False}
+2021-02-15 10:43:14,133 DEBUG:cimcLib:BMC_RT_Step: 0.3.1 file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check_faults() line: 1408 msg : 'Check for faults'
+2021-02-15 10:43:14,133 DEBUG:cimcLib:UCS_CLI_date: 2021-02-15 10:43:14.133347
+2021-02-15 10:43:14,135 INFO:util:SPY: top
+2021-02-15 10:43:14,142 INFO:util:SPY: 
+2021-02-15 10:43:14,146 INFO:util:SPY: ucs-reg-tb09-A* # 
+2021-02-15 10:43:14,146 DEBUG:cimcLib:UCS_CLI_cmd: top
+2021-02-15 10:43:14,147 DEBUG:cimcLib:UCS_CLI_out: 
+2021-02-15 10:43:14,147 DEBUG:cimcLib:UCS_CLI_date: 2021-02-15 10:43:14.147271 cmd duration = 0.0139219760895
+2021-02-15 10:43:14,147 DEBUG:cimcLib:UCS_CLI_date: 2021-02-15 10:43:14.147479
+2021-02-15 10:43:14,155 INFO:util:SPY: scope server 1/1
+2021-02-15 10:43:14,157 INFO:util:SPY: 
+2021-02-15 10:43:14,158 INFO:util:SPY: ucs-reg-tb09-A /chassis/server* # 
+2021-02-15 10:43:14,165 DEBUG:cimcLib:UCS_CLI_cmd: scope server 1/1
+2021-02-15 10:43:14,169 DEBUG:cimcLib:UCS_CLI_out: 
+2021-02-15 10:43:14,169 DEBUG:cimcLib:UCS_CLI_date: 2021-02-15 10:43:14.169561 cmd duration = 0.0220789909363
+2021-02-15 10:43:14,169 DEBUG:cimcLib:UCS_CLI_date: 2021-02-15 10:43:14.169787
+2021-02-15 10:43:14,176 INFO:util:SPY: show fault
+2021-02-15 10:43:14,505 INFO:util:SPY: 
+2021-02-15 10:43:14,507 INFO:util:SPY: Severity  Code     Last Transition Time     ID       Description
+2021-02-15 10:43:14,507 INFO:util:SPY: --------- -------- ------------------------ -------- -----------
+2021-02-15 10:43:14,507 INFO:util:SPY: Warning   F78414   2021-02-15T10:43:07.878   3931165 [FSM:STAGE:REMOTE-ERROR]: Result: end-point-unavailable Code: unspecified Message: Waiting for BIOS POST Completion information from IBMC(sam:dme:ComputePhysicalDisassociate:BiosPostCompletion)
+2021-02-15 10:43:14,507 INFO:util:SPY: Major     F0283    2021-02-15T10:42:21.933   3924760  VIF 2914 on server 1 / 1 of switch B  down, reason: Module removed
+2021-02-15 10:43:14,508 INFO:util:SPY: Major     F0283    2021-02-15T10:42:21.933   3924759  VIF 2915 on server 1 / 1 of switch B  down, reason: Module removed
+2021-02-15 10:43:14,508 INFO:util:SPY: Major     F0283    2021-02-15T10:42:21.630   3924736  VIF 2912 on server 1 / 1 of switch A  down, reason: Module removed
+2021-02-15 10:43:14,508 INFO:util:SPY: Major     F0283    2021-02-15T10:42:21.630   3924735  VIF 2913 on server 1 / 1 of switch A  down, reason: Module removed
+2021-02-15 10:43:14,508 INFO:util:SPY: Cleared   F16973   2021-02-15T10:36:00.309   3924657 [FSM:STAGE:RETRY:]: Perform oob storage inventory with server profile org-root/ls-SP_1_1(FSM-STAGE:sam:dme:ComputePhysicalAssociate:OobStorageInventory)
+2021-02-15 10:43:14,508 INFO:util:SPY: Cleared   F78413   2021-02-15T10:35:50.586   3925313 [FSM:STAGE:REMOTE-ERROR]: Result: timeout Code: unspecified Message: Waiting for storage subsystem to initialize(sam:dme:ComputePhysicalAssociate:OobStorageInventory)
+2021-02-15 10:43:14,508 INFO:util:SPY: Cleared   F16520   2021-02-15T10:25:20.337   3921387 [FSM:STAGE:RETRY:]: Waiting for valid power profile for server 1/1 from CIMC(FSM-STAGE:sam:dme:ComputeBladeDiscover:SendBmcProfilingDone)
+2021-02-15 10:43:14,508 INFO:util:SPY: Cleared   F77960   2021-02-15T10:25:20.337   3922299 [FSM:STAGE:REMOTE-ERROR]: Result: end-point-unavailable Code: ERR-POWER-PROFILE-IN-PROGRESS Message: Waiting for valid Power Profile from CIMC(sam:dme:ComputeBladeDiscover:SendBmcProfilingDone)
+2021-02-15 10:43:14,508 INFO:util:SPY: Cleared   F0206    2021-02-15T10:13:14.052   3921590 Adapter 1/1/1 is unreachable
+2021-02-15 10:43:14,509 INFO:util:SPY: Cleared   F0206    2021-02-15T10:13:14.002   3921589 Adapter 1/1/2 is unreachable
+2021-02-15 10:43:14,509 INFO:util:SPY: Cleared   F0156    2021-02-15T10:11:41.751   3880118 Server, vendor(Cisco Systems Inc), model(UCSB-B200-M4), serial(FCH2012J3KQ) in slot 1/1 presence: mismatch
+2021-02-15 10:43:14,509 INFO:util:SPY: ucs-reg-tb09-A /chassis/server* # 
+2021-02-15 10:43:14,510 DEBUG:cimcLib:UCS_CLI_cmd: show fault
+2021-02-15 10:43:14,510 DEBUG:cimcLib:UCS_CLI_out: 
+2021-02-15 10:43:14,510 DEBUG:cimcLib:UCS_CLI_out: Severity  Code     Last Transition Time     ID       Description
+2021-02-15 10:43:14,510 DEBUG:cimcLib:UCS_CLI_out: --------- -------- ------------------------ -------- -----------
+2021-02-15 10:43:14,510 DEBUG:cimcLib:UCS_CLI_out: Warning   F78414   2021-02-15T10:43:07.878   3931165 [FSM:STAGE:REMOTE-ERROR]: Result: end-point-unavailable Code: unspecified Message: Waiting for BIOS POST Completion information from IBMC(sam:dme:ComputePhysicalDisassociate:BiosPostCompletion)
+2021-02-15 10:43:14,510 DEBUG:cimcLib:UCS_CLI_out: Major     F0283    2021-02-15T10:42:21.933   3924760  VIF 2914 on server 1 / 1 of switch B  down, reason: Module removed
+2021-02-15 10:43:14,510 DEBUG:cimcLib:UCS_CLI_out: Major     F0283    2021-02-15T10:42:21.933   3924759  VIF 2915 on server 1 / 1 of switch B  down, reason: Module removed
+2021-02-15 10:43:14,510 DEBUG:cimcLib:UCS_CLI_out: Major     F0283    2021-02-15T10:42:21.630   3924736  VIF 2912 on server 1 / 1 of switch A  down, reason: Module removed
+2021-02-15 10:43:14,511 DEBUG:cimcLib:UCS_CLI_out: Major     F0283    2021-02-15T10:42:21.630   3924735  VIF 2913 on server 1 / 1 of switch A  down, reason: Module removed
+2021-02-15 10:43:14,511 DEBUG:cimcLib:UCS_CLI_out: Cleared   F16973   2021-02-15T10:36:00.309   3924657 [FSM:STAGE:RETRY:]: Perform oob storage inventory with server profile org-root/ls-SP_1_1(FSM-STAGE:sam:dme:ComputePhysicalAssociate:OobStorageInventory)
+2021-02-15 10:43:14,511 DEBUG:cimcLib:UCS_CLI_out: Cleared   F78413   2021-02-15T10:35:50.586   3925313 [FSM:STAGE:REMOTE-ERROR]: Result: timeout Code: unspecified Message: Waiting for storage subsystem to initialize(sam:dme:ComputePhysicalAssociate:OobStorageInventory)
+2021-02-15 10:43:14,511 DEBUG:cimcLib:UCS_CLI_out: Cleared   F16520   2021-02-15T10:25:20.337   3921387 [FSM:STAGE:RETRY:]: Waiting for valid power profile for server 1/1 from CIMC(FSM-STAGE:sam:dme:ComputeBladeDiscover:SendBmcProfilingDone)
+2021-02-15 10:43:14,511 DEBUG:cimcLib:UCS_CLI_out: Cleared   F77960   2021-02-15T10:25:20.337   3922299 [FSM:STAGE:REMOTE-ERROR]: Result: end-point-unavailable Code: ERR-POWER-PROFILE-IN-PROGRESS Message: Waiting for valid Power Profile from CIMC(sam:dme:ComputeBladeDiscover:SendBmcProfilingDone)
+2021-02-15 10:43:14,511 DEBUG:cimcLib:UCS_CLI_out: Cleared   F0206    2021-02-15T10:13:14.052   3921590 Adapter 1/1/1 is unreachable
+2021-02-15 10:43:14,511 DEBUG:cimcLib:UCS_CLI_out: Cleared   F0206    2021-02-15T10:13:14.002   3921589 Adapter 1/1/2 is unreachable
+2021-02-15 10:43:14,511 DEBUG:cimcLib:UCS_CLI_out: Cleared   F0156    2021-02-15T10:11:41.751   3880118 Server, vendor(Cisco Systems Inc), model(UCSB-B200-M4), serial(FCH2012J3KQ) in slot 1/1 presence: mismatch
+2021-02-15 10:43:14,512 DEBUG:cimcLib:UCS_CLI_date: 2021-02-15 10:43:14.512083 cmd duration = 0.342293977737
+2021-02-15 10:43:14,512 DEBUG:cimcLib:BMC_RT_Step: 0.3.2 file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check_faults() line: 1416 msg : 'Fail the test on any Critical faults - unless fault is in skip list'
+2021-02-15 10:43:14,519 INFO:cimcLib:Skip Faults returning True
+2021-02-15 10:43:14,519 INFO:cimcLib:Critical Fault does not affect test
+2021-02-15 10:43:14,520 INFO:cimcLib:
+Severity  Code     Last Transition Time     ID       Description
+--------- -------- ------------------------ -------- -----------
+Warning   F78414   2021-02-15T10:43:07.878   3931165 [FSM:STAGE:REMOTE-ERROR]: Result: end-point-unavailable Code: unspecified Message: Waiting for BIOS POST Completion information from IBMC(sam:dme:ComputePhysicalDisassociate:BiosPostCompletion)
+Major     F0283    2021-02-15T10:42:21.933   3924760  VIF 2914 on server 1 / 1 of switch B  down, reason: Module removed
+Major     F0283    2021-02-15T10:42:21.933   3924759  VIF 2915 on server 1 / 1 of switch B  down, reason: Module removed
+Major     F0283    2021-02-15T10:42:21.630   3924736  VIF 2912 on server 1 / 1 of switch A  down, reason: Module removed
+Major     F0283    2021-02-15T10:42:21.630   3924735  VIF 2913 on server 1 / 1 of switch A  down, reason: Module removed
+Cleared   F16973   2021-02-15T10:36:00.309   3924657 [FSM:STAGE:RETRY:]: Perform oob storage inventory with server profile org-root/ls-SP_1_1(FSM-STAGE:sam:dme:ComputePhysicalAssociate:OobStorageInventory)
+Cleared   F78413   2021-02-15T10:35:50.586   3925313 [FSM:STAGE:REMOTE-ERROR]: Result: timeout Code: unspecified Message: Waiting for storage subsystem to initialize(sam:dme:ComputePhysicalAssociate:OobStorageInventory)
+Cleared   F16520   2021-02-15T10:25:20.337   3921387 [FSM:STAGE:RETRY:]: Waiting for valid power profile for server 1/1 from CIMC(FSM-STAGE:sam:dme:ComputeBladeDiscover:SendBmcProfilingDone)
+Cleared   F77960   2021-02-15T10:25:20.337   3922299 [FSM:STAGE:REMOTE-ERROR]: Result: end-point-unavailable Code: ERR-POWER-PROFILE-IN-PROGRESS Message: Waiting for valid Power Profile from CIMC(sam:dme:ComputeBladeDiscover:SendBmcProfilingDone)
+Cleared   F0206    2021-02-15T10:13:14.052   3921590 Adapter 1/1/1 is unreachable
+Cleared   F0206    2021-02-15T10:13:14.002   3921589 Adapter 1/1/2 is unreachable
+Cleared   F0156    2021-02-15T10:11:41.751   3880118 Server, vendor(Cisco Systems Inc), model(UCSB-B200-M4), serial(FCH2012J3KQ) in slot 1/1 presence: mismatch
+2021-02-15 10:43:14,520 DEBUG:cimcLib:BMC_RT_Exit: file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check_faults() line: 1433 step: 0 returns: 0 msg : 'Done with check_faults()' routine duration: 0.387404918671
+2021-02-15 10:43:14,520 DEBUG:cimcLib:BMC_RT_Exit_date: 2021-02-15 10:43:14.520455
+2021-02-15 10:43:14,520 INFO:cimcLib:Check has completed, no bad sel events, alarms, or blade faults
+2021-02-15 10:43:14,520 DEBUG:cimcLib:BMC_RT_Exit: file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: check() line: 2460 step: 0 returns: 0 msg : 'Done with check()' routine duration: 0.389358997345
+2021-02-15 10:43:14,520 DEBUG:cimcLib:BMC_RT_Exit_date: 2021-02-15 10:43:14.520867
+2021-02-15 10:43:14,521 DEBUG:cimcLib:Last exception: exctype=<class 'qali.test.test.TestFail'>
+ excvalue=Blade is not associated in the end of test.:
+exitno: -1
+ exctrace=  File "/auto/savbu-india/automation/qali_sudo/qali/testss//teams/regression/CIMC/scripts/provision/provision.py", line 82, in run_test
+    bmc_rt.exit_fail(-1, 'Blade is not associated in the end of test.')
+  File "/auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py", line 1274, in exit_fail
+    raise TestFail(msg_exitno)
+
+2021-02-15 10:43:14,521 DEBUG:cimcLib:BMC_RT_Exit: file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: exit_fail() line: 1265 step: 0 returns: -2 msg : 'Except TestFail, Blade is not associated in the end of test.' routine duration: 0.390136957169
+2021-02-15 10:43:14,521 DEBUG:cimcLib:BMC_RT_Exit: Stack:
+2021-02-15 10:43:14,564 DEBUG:cimcLib:     [2] file: /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py routine: exit_fail line: 1265
+2021-02-15 10:43:14,578 DEBUG:cimcLib:     [1] file: /auto/savbu-india/automation/qali_sudo/qali/testss//teams/regression/CIMC/scripts/provision/provision.py routine: run_test line: 85
+2021-02-15 10:43:14,578 DEBUG:cimcLib:BMC_RT_Exit_date: 2021-02-15 10:43:14.578630
+2021-02-15 10:43:14,578 DEBUG:cimcLib:BMC_Exit_Fail: value=-2 msg=Except TestFail, Blade is not associated in the end of test.
+2021-02-15 10:43:14,578 INFO:main:Done Running testcase..
+2021-02-15 10:43:14,579 ERROR:main:failure message: ('Except TestFail, Blade is not associated in the end of test.:\nexitno: -2',)
+2021-02-15 10:43:14,579 ERROR:main:Test provision suffered an Error (line 85). The last traceback error is located at line 1274 of /auto/savbu-india/automation/qali_sudo/qali/testss/teams/cimc/library/cimcLib.py, and the function name is exit_fail
